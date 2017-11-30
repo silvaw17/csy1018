@@ -1,0 +1,539 @@
+html{
+  min-height: 100%; 
+  min-width: 100%;
+}
+body{
+ background: url(pictures/phonemacm-min.jpeg);
+ background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  font-family: 'Special Elite', cursive;
+  overflow: auto
+    
+  
+
+}
+@media only screen and (max-width:900px){body{
+  overflow: auto;
+  max-height: 100%;
+  max-width: 100%;
+  }}
+/*......header....*/
+
+  .logo img{
+    border-radius:60%;
+    display: flex;
+    align-items:center;
+    margin: 20px;
+    height: 120px;
+    
+
+  }
+
+@media only screen and (max-width:700px){.logo img{
+  width: 50px;
+  height: 50px;
+position: relative;
+  right: 15px;
+  bottom: 10px;
+  }
+}
+
+
+header{
+  width: 0;
+}
+
+
+
+
+/*....navbar...*/
+
+nav {position: relative;
+
+  bottom: 100px;
+  font-size: 23px;
+  font-family: 'Special Elite', cursive;
+  
+  
+}
+nav ul{
+  list-style: none;
+  font-family: 'Special Elite', cursive;
+  position: relative;
+  left: 455px
+  
+  
+  
+}
+ul{
+  margin: 0%;
+  padding: 0%;
+  width: 810px;
+}
+
+nav li{
+  display:inline-block;
+ 
+  list-style-type:none;
+  margin-left: 74px;
+  position: relative;
+  
+}
+nav a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+}
+nav a:hover{
+  color: #a71010;
+}
+
+nav a::before{
+  content: "";
+  display: block;
+  height: 5px;
+  width: 0%;
+  background: #a31515;
+  position: absolute;
+  bottom: 30px;
+  transition: all ease-in-out 200ms;
+}
+
+
+nav a:hover::before{
+  width: 100%;
+ 
+}
+
+  nav a:hover::before{
+    width: 100%;
+  }
+
+
+
+ .menu1 label{
+  margin: 0 40px 0 0;
+  font-size: 20px;
+  display: none;
+  position: relative;
+  left: 250px;
+   bottom: 80px;
+   width: 30px;
+   height: 40px;
+  
+}
+#toggle {
+  display: none;
+  
+}
+
+@media  only screen and (max-width: 600px){ .menu1 label{
+  display: block;
+  cursor: pointer;
+  }
+.menu ul li{
+  text-align: center;
+  width: 100%;
+  display: none;
+  position: relative;
+  right: 370px;
+  top: 20px;
+  font-size: 15px;
+  width: 80px;
+  line-height: 30px;
+}
+
+}
+
+
+
+
+
+#toggle:checked + .menu ul li{
+  display: block;
+}
+
+/*....index....*/
+#text1 {
+  font-family: 'Special Elite', cursive;
+  position: relative;
+ left: 120px;
+top: 110px;
+ 
+}
+
+#text1 h1{
+  position: relative;
+  right: 60px;
+  font-weight: bolder;
+  color: #a31515;
+  bottom: 60px;
+  font-size: 28px;
+  
+}
+#text1 p {
+  font-weight: bold;
+  line-height: 160%;
+  margin-top: 60px;
+  font-size: 20px;
+  position: relative;
+  bottom: 80px
+  
+
+
+
+}
+#text2 p{
+  position: relative;
+  right: 25px;
+  bottom:120px
+  
+  
+}
+#text2 {
+  font-family: 'Special Elite', cursive;
+  position: relative;
+  float: right;
+  right: 50px;
+  font-weight: bold;
+  line-height: 160%;
+  font-size: 20px;
+  
+  
+}
+
+#text2 h2{
+  position: relative;
+  right: 80px;
+    color: #a31515;
+  font-weight: bolder;
+  font-size:28px;
+  bottom: 130px;
+    
+}
+@media  only screen and (max-width: 600px) {#text1 h1{
+  font-size: 16px;
+    position: relative;
+  width: 100px;
+  
+  
+  }}
+
+
+@media  only screen and (max-width: 600px) {#text1 p{
+  font-size: 12px;
+  position:relative;
+  right: 120px;
+  }}
+
+
+@media  only screen and (max-width: 600px) {#text2 h2{
+  font-size: 16px;
+  position: relative;
+  left: 80px;
+  top: 110px;
+  width: 80px;
+
+
+  }}
+
+@media  only screen and (max-width: 600px) {#text2 p{
+  font-size: 12px;
+  position:relative;
+ line-height: 150%;
+  left: 50px;
+  top: 100px;
+  }}
+
+
+
+
+
+/*....video...*/
+#call1{
+  display: none;
+}
+.pic
+{
+  display: none;
+  position: relative;
+  top: 50px;
+  left: 600px;
+}
+
+input[type=checkbox]{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+#call:checked ~ .pic{
+  display: block;
+}
+
+
+
+.video label{
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 30px;
+  background: #000000;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  left: 700px;
+  bottom: 
+  
+
+}
+
+.video label:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background: #ffffff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked +label {
+  background: #a31515;
+
+}
+
+
+input:checked +label:after {
+  left: calc(100% - 3px);
+  
+  transform: translateX(-100%);
+}
+
+
+ .video label:active:after {
+  width: 30px;
+}
+
+@media  only screen and (max-width: 500px){.video label{
+  position: relative;
+  left: 1px;
+  top: 130px;
+  }}
+  
+#picturetext p{
+  position: relative;
+  bottom: 80px;
+  left: 670px;  font-family: 'Special Elite', cursive;
+  font-weight: bold;
+
+}
+
+
+@media  only screen and (max-width: 500px){ #picturetext p{
+  position: relative;
+ left: 5px;
+ top:  50px;
+  }}
+
+
+/*....footer...*/
+
+
+
+
+.footer #button{
+  width:35px;
+  height:35px;
+  border: #9d9db2 12px solid;
+  border-radius:35px;
+  margin:0 auto;
+  position:relative;
+  transition: all 1s ease;
+}
+.footer #button:hover{
+  width:35px;
+  height:35px;
+  border: #3f3f3f 12px solid;
+  transition: all 1s ease;
+  position:relative;
+  
+}
+.footer {
+  bottom:0;
+  left:0;
+  position:fixed;
+  width: 100%;
+  height: 3em;
+  overflow:hidden;
+  margin:0 auto;
+
+  transition: all 3s ease;
+  z-index:999;
+  
+}
+.footer:hover {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  height:13em;
+}
+.footer #container{
+  margin-top:5px;
+  width:100%;
+  height:100%;
+  position:relative;
+  top:0;
+  left:0;
+  background: #DCDCDD;
+}
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+  width:150px;
+  height:auto;
+  margin:0 auto;
+}
+.footer_center{
+  width:500px;
+  float:left;
+  text-align:center;
+}
+
+
+@media  only screen and (max-width: 700px) {
+  width: 30px
+  }
+  .footer #button{
+    width:10px;
+    height:10px
+      
+  }
+
+}
+  
+#contact h3{
+  font-size: 25px;
+  position: relative;
+  right: 719px;
+  top: 30px;
+}
+#contact h3{
+  position: relative;
+  right: 719px;
+  top: 30px;
+  font-size: 25px;
+}
+  #contact p{
+    line-height: 4px;
+    position: relative;
+    right: 720px;
+    top: 30px;
+    font-size: 20PX
+  }
+#quick h3{
+  position: relative;
+  bottom: 120px;
+  font-size: 25px;
+}
+
+#quick p a{position: relative;
+  bottom: 125px;font-size: 20px;
+  line-height: 25px;
+  text-decoration-line: none;
+  color:black;
+  line-height: 30px
+
+}
+#quick{
+ 
+}
+@media  only screen and (max-width: 600px){#quick h3{
+  font-size: 16px;
+  position: relative;
+  right: 75px;
+  bottom: 100px;
+  
+  }
+  #quick p{
+    position: relative;
+    right: 75px;
+    top: 20px;
+    font-size: 70px
+  }
+  }
+  
+.icons{
+  position: relative;
+  bottom: 315px;
+  left: 813px;
+  display: flex;
+
+  
+
+}
+a {
+   color: inherit; 
+}
+
+
+.fa-stack:hover .fa-facebook {
+  color: blue;
+}
+.fa-stack:hover .fa-circle {
+  color: white;
+}
+
+
+.fa-stack:hover .fa-youtube{
+  color: red;
+}
+.youtube .fa-stack:hover .fa-circle {
+  color: white;
+ 
+  
+}
+
+.fa-stack:hover .fa-instagram{
+  color: #7a5f32;
+}
+.instagram .fa-stack:hover .fa-circle {
+  color: white;
+ 
+}
+
+
+#logolink h4{
+  position: relative;
+  bottom: 270px;
+  left: 650px;
+}
+#logolink p{
+  position: relative;
+  left: 650px;
+  bottom: 210px
+}
+
+
+
+
+/*.....job page...*/
+
+
+
+
+
+
+
+
+
+
+
+
