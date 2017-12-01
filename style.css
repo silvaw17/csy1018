@@ -1,6 +1,6 @@
 html{
-  min-height: 100%; 
-  min-width: 100%;
+  max-height: 100%; 
+  max-width: 100%;
 }
 body{
  background: url(pictures/phonemacm-min.jpeg);
@@ -8,29 +8,28 @@ body{
   background-repeat: no-repeat;
   background-position: fixed;
   font-family: 'Special Elite', cursive;
-  overflow: auto
+  overflow: auto;
     
   
 
 }
 
-*{
-  padding: 0;
-  margin: 0;
-}
-@media only screen and (max-width:900px){body{
+
+@media only screen and (max-width:500px){body{
   overflow: auto;
   max-height: 100%;
   max-width: 100%;
   }}
+
+
 /*......header....*/
 
   .logo img{
     border-radius:60%;
-    display: flex;
     align-items:center;
     margin: 20px;
-    height: 120px;
+    height: 110px;
+    
     
 
   }
@@ -45,11 +44,6 @@ position: relative;
 }
 
 
-header{
-  width: 0;
-}
-
-
 
 
 /*....navbar...*/
@@ -57,8 +51,10 @@ header{
 nav {position: relative;
 
   bottom: 100px;
-  font-size: 23px;
+  font-size: 17px;
   font-family: 'Special Elite', cursive;
+    position: relative;
+    right: 220px
   
   
 }
@@ -171,20 +167,20 @@ top: 110px;
 
 #text1 h1{
   position: relative;
-  right: 60px;
+  right: 90px;
   font-weight: bolder;
   color: #a31515;
   bottom: 60px;
-  font-size: 28px;
+  font-size: 20px;
   
 }
 #text1 p {
   font-weight: bold;
   line-height: 160%;
-  margin-top: 60px;
-  font-size: 20px;
+  font-size: 15px;
   position: relative;
-  bottom: 80px
+  bottom: 60px;
+ right: 50px;
   
 
 
@@ -192,8 +188,10 @@ top: 110px;
 }
 #text2 p{
   position: relative;
-  right: 25px;
-  bottom:120px
+  left: 50px;
+  bottom:10px;
+    font-size: 15px;
+    line-height: 160%;
   
   
 }
@@ -211,11 +209,12 @@ top: 110px;
 
 #text2 h2{
   position: relative;
-  right: 80px;
+
     color: #a31515;
   font-weight: bolder;
-  font-size:28px;
-  bottom: 130px;
+  font-size:20px;
+  bottom: 20px;
+ left: 20px;
     
 }
 @media  only screen and (max-width: 600px) {#text1 h1{
@@ -289,8 +288,8 @@ input[type=checkbox]{
   display: block;
   border-radius: 100px;
   position: relative;
-  left: 700px;
-  bottom: 
+  left: 390px;
+  top: 50px
   
 
 }
@@ -324,19 +323,20 @@ input:checked +label:after {
   width: 30px;
 }
 
+#picturetext p{
+  position: relative;
+  top: -20px;
+  left: 370px;  font-family: 'Special Elite', cursive;
+  font-weight: bold;
+
+}
 @media  only screen and (max-width: 500px){.video label{
   position: relative;
   left: 1px;
   top: 130px;
   }}
   
-#picturetext p{
-  position: relative;
-  bottom: 80px;
-  left: 670px;  font-family: 'Special Elite', cursive;
-  font-weight: bold;
 
-}
 
 
 @media  only screen and (max-width: 500px){ #picturetext p{
@@ -374,7 +374,7 @@ input:checked +label:after {
   position:fixed;
   width: 100%;
   height: 3em;
-  overflow:hidden;
+  
   margin:0 auto;
 
   transition: all 3s ease;
@@ -387,7 +387,7 @@ input:checked +label:after {
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
-  height:13em;
+  height:8em;
 }
 .footer #container{
   margin-top:5px;
@@ -422,43 +422,38 @@ input:checked +label:after {
       
   }
 
+
+  #contact h3{
+position: relative;
+right: 420px;
+top: 38px;
+      font-size: 14px;
 }
-  
-#contact h3{
-  font-size: 25px;
-  position: relative;
-  right: 719px;
-  top: 30px;
-}
-#contact h3{
-  position: relative;
-  right: 719px;
-  top: 30px;
-  font-size: 25px;
-}
+
+
   #contact p{
     line-height: 4px;
     position: relative;
-    right: 720px;
-    top: 30px;
-    font-size: 20PX
-  }
+    right: 420px;
+    top: 35px;
+    font-size: 12px;
+
+}
+
+
 #quick h3{
   position: relative;
-  bottom: 120px;
-  font-size: 25px;
+  bottom: 56px;
+  font-size: 14px;
 }
 
 #quick p a{position: relative;
-  bottom: 125px;font-size: 20px;
-  line-height: 25px;
+  bottom: 65px;
   text-decoration-line: none;
   color:black;
-  line-height: 30px
+  line-height: 18px;
+    font-size: 12px;
 
-}
-#quick{
- 
 }
 @media  only screen and (max-width: 600px){#quick h3{
   font-size: 16px;
@@ -477,9 +472,10 @@ input:checked +label:after {
   
 .icons{
   position: relative;
-  bottom: 315px;
-  left: 813px;
+  bottom: 198px;
+  left: 613px;
   display: flex;
+    font-size: 10px
 
   
 
@@ -517,13 +513,14 @@ a {
 
 #logolink h4{
   position: relative;
-  bottom: 270px;
-  left: 650px;
+  bottom: 160px;
+  left: 420px;
 }
 #logolink p{
   position: relative;
-  left: 650px;
-  bottom: 210px
+  left: 420px;
+  bottom: 130px;
+    font-size: 10px
 }
 
 
