@@ -1,0 +1,415 @@
+html{
+  min-height: 100%; 
+  min-width: 100%;
+}
+body{
+  background: url(pictures/phonemacm-min.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Special Elite', cursive;
+}
+@media only screen and (max-width:700px){body{
+  
+  max-height: 100%;
+  max-width: 100%;
+  overflow: visible
+  }}
+
+
+/*......header....*/
+
+
+
+
+
+.logo img{
+  border-radius:60%;
+  display: flex;
+  align-items:center;
+  margin: 20px;
+  height: 120px;
+
+
+}
+@media only screen and (max-width:600px){.logo img{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  right: 15px;
+  bottom: 10px;
+  }
+}
+
+
+
+/*....navbar...*/
+
+nav {position: relative;
+
+  bottom: 100px;
+  font-size: 23px;
+  font-family: 'Special Elite', cursive;
+
+
+}
+nav ul{
+  list-style: none;
+  font-family: 'Special Elite', cursive;
+  position: relative;
+  left: 305px
+
+
+
+}
+ul{
+  margin: 0%;
+  padding: 0%;
+  width: 810px;
+}
+
+nav li{
+  display:inline-block;
+
+  list-style-type:none;
+  margin-left: 74px;
+  position: relative;
+
+}
+nav a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+}
+nav a:hover{
+  color: #a71010;
+}
+
+nav a::before{
+  content: "";
+  display: block;
+  height: 5px;
+  width: 0%;
+  background: #a31515;
+  position: absolute;
+  bottom: 30px;
+  transition: all ease-in-out 200ms;
+}
+
+
+nav a:hover::before{
+  width: 100%;
+
+}
+
+nav a:hover::before{
+  width: 100%;
+}
+
+
+
+.menu1 label{
+  margin: 0 40px 0 0;
+  font-size: 20px;
+  display: none;
+  position: relative;
+  left: 250px;
+  bottom: 80px;
+  width: 30px;
+  height: 40px;
+
+}
+#toggle {
+  display: none;
+
+}
+
+
+
+
+
+#toggle:checked + .menu ul li{
+  display: block;
+}
+  
+@media  only screen and (max-width: 700px){ .menu1 label{
+  display: block;
+  cursor: pointer;
+  }
+  .menu ul li{
+    text-align: center;
+    width: 100%;
+    display: none;
+    position: relative;
+    right: 180px;
+    top: 20px;
+    font-size: 15px;
+    width: 80px;
+    line-height: 30px;
+  }
+
+}
+
+
+
+/*...columns...*/
+
+#pagewrap {
+  padding: 5px;
+  width: 960px;
+  margin: 20px auto;
+  
+}
+
+#content p{
+  text-align: center;
+  line-height: 27px;
+  float: center;
+  
+  
+}
+
+#content {
+  width: 290px;
+  float: left;
+  padding: 5px 15px;
+  margin: 20px;
+  font-family: 'Special Elite', cursive;
+ font-weight: bold;
+  line-height: 25px; 
+  position: relative;
+  top: 120px;
+  background: #c3c3c3;
+  left: 300px;
+  border-radius: 10%;
+  height: 400px;
+ 
+  
+  
+
+}
+#content h2{
+  color: #a71010
+
+}
+#middle h2{
+  color: #a71010
+}
+#middle p,h2{
+  text-align: center
+}
+
+#middle {
+  width:290px; 
+  float: left;
+  padding: 5px 15px;
+  margin: 0px 5px 5px 5px;
+  position: relative;
+  line-height: 25px;
+  font-family: 'Special Elite', cursive;
+  font-weight: bold;
+  position: relative;
+  top: 139px;
+  line-height: 25px; 
+  left: 580px;
+  background: #c3c3c3;
+  
+  border-radius: 10%;
+  height: 400px
+
+  
+
+
+}
+
+
+#end {
+  width:290px; 
+  float: left;
+  padding: 5px 15px;
+  margin: 0px 5px 5px 5px;
+  position: relative;
+  line-height: 25px;
+  font-family: 'Special Elite', cursive;
+  font-weight: bold;
+  position: relative;
+  top: 639px;
+  line-height: 25px; 
+  right: 380px;
+  background: #c3c3c3;
+  border-radius: 10%;
+  height: 400px;
+  text-align: center;
+
+}
+#end h1{
+  color: #a71010
+}
+
+
+#end2 {
+  width:290px; 
+  float: left;
+  padding: 5px 15px;
+  margin: 0px 5px 5px 5px;
+  line-height: 25px;
+  font-family: 'Special Elite', cursive;
+  font-weight: bold;
+  position: relative;
+  top: 640px;
+  right: 80px;
+  background: #c3c3c3;
+  line-height: 25px;
+  border-radius: 10%;
+  height: 400px;
+  text-align: center;
+  
+
+}
+#end2 h1{
+  color: #a71010
+  
+}
+@media screen and (max-width: 580px) {
+
+  #pagewrap {
+    width: 94%;
+  }
+
+  #content {
+    width: 41%;
+    padding: 1% 4%;
+    font-size: 15px;
+    left: -4px
+    
+
+  }
+  #content h2{
+    color: #a71010
+
+  }
+  #middle h2{
+    color: #a71010
+  }
+  #middle {
+    width: 41%;
+    padding: 1% 4%;
+    float: right;
+    font-size: 15px;
+    position: relative;
+    
+    left: 20px;
+  }
+
+  #end {width: 41%;
+    padding: 1% 4%;
+    float: right;
+    left: 0px;
+      width: 75%;
+    margin-top: 40px
+    
+  }
+  #end2 {width: 41%;
+    padding: 1% 4%;
+    float: right;
+    left: 23px;
+    margin-top: 40px
+  }
+
+}
+
+
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+  #content {
+    width: 200px;
+    float:none;
+    font-size: 15px;
+   
+    
+
+  }
+  #content h2{
+    color: #a71010
+    
+  }
+  #middle h2{
+   color: #a71010
+  }
+  #middle {
+    width: 75%;
+    float: none;
+    margin-left: 0px;
+    font-size: 15px;
+
+  }
+  #end{width: auto;
+    float: none;
+    width: 75%;
+    left: 17px;
+    
+    
+  }
+
+
+#end2{width: auto;
+  float: none;
+  width: 75%;
+  }}
+
+.tooltip {
+  color: #000000; outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+}
+.tooltip span {
+  margin-left: -999em;
+  position: absolute;
+
+}
+.tooltip:hover span {
+  border-radius: 5px 5px;
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); 
+  -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); 
+  -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 2em;
+  top: 2em; 
+  z-index: 99;
+  margin-left: 0; 
+  width: 250px;
+  color: darkred;
+  font-weight: bolder
+}
+
+
+.classic { padding: 0.8em 1em; }
+
+
+.classic {background: #f3f3f3; border: 1px solid #000000; }
+
+@media screen and (max-width: 600px) { .tooltip:hover span{
+  width: 110px;
+  font-size: 12px
+  }
+  }
+ 
+
+
+
+  
+
+
+
+
+
+
+
+
+
