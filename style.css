@@ -3,14 +3,15 @@ html{
   max-width: 100%;
 }
 body{
- background: url(pictures/phonemacm-min.jpeg);
- background-size: cover;
-
-  background-position: fixed;
+ background: url(pictures/oldpc.jpg);
+ background-size:cover;
+   
+    background-repeat: no-repeat;   
+    background-position: center center;
   font-family: 'Special Elite', cursive;
   overflow: auto;
-    
-  
+    background-attachment: fixed;
+
 
 }
 
@@ -28,7 +29,7 @@ body{
     border-radius:60%;
     align-items:center;
     margin: 20px;
-    height: 80px;
+    height: 110px;
     
     
 
@@ -51,10 +52,10 @@ position: relative;
 nav {position: relative;
 
   bottom: 100px;
-  font-size: 17px;
+  font-size: 25px;
   font-family: 'Special Elite', cursive;
     position: relative;
-    right: 220px
+    left:  2px;
   
   
 }
@@ -77,7 +78,7 @@ nav li{
   display:inline-block;
  
   list-style-type:none;
-  margin-left: 74px;
+  margin-left: 66px;
   position: relative;
   
 }
@@ -119,7 +120,7 @@ nav a:hover::before{
   font-size: 20px;
   display: none;
   position: relative;
-  left: 250px;
+  left: 350px;
    bottom: 80px;
    width: 30px;
    height: 40px;
@@ -130,7 +131,7 @@ nav a:hover::before{
   
 }
 
-@media  only screen and (max-width: 600px){ .menu1 label{
+@media  only screen and (max-width: 520px){ .menu1 label{
   display: block;
   cursor: pointer;
   }
@@ -140,10 +141,10 @@ nav a:hover::before{
   display: none;
   position: relative;
   right: 370px;
-  top: 20px;
-  font-size: 15px;
+  top: 10px;
+  font-size: 13px;
   width: 80px;
-  line-height: 30px;
+  line-height: 20px;
 }
 
 }
@@ -161,7 +162,7 @@ nav a:hover::before{
   font-family: 'Special Elite', cursive;
   position: relative;
  left: 120px;
-top: 110px;
+top: 150px;
  
 }
 
@@ -171,16 +172,17 @@ top: 110px;
   font-weight: bolder;
   color: #a31515;
   bottom: 60px;
-  font-size: 20px;
+  font-size: 30px;
   
 }
 #text1 p {
   font-weight: bold;
   line-height: 160%;
-  font-size: 15px;
+  font-size: 20px;
   position: relative;
-  bottom: 60px;
+  bottom: 50px;
  right: 50px;
+    
   
 
 
@@ -188,9 +190,9 @@ top: 110px;
 }
 #text2 p{
   position: relative;
-  left: 50px;
-  bottom:10px;
-    font-size: 15px;
+right:  20px;
+  top:  30px;
+    font-size: 20px;
     line-height: 160%;
   
   
@@ -199,7 +201,7 @@ top: 110px;
   font-family: 'Special Elite', cursive;
   position: relative;
   float: right;
-  right: 50px;
+  right: 0px;
   font-weight: bold;
   line-height: 160%;
   font-size: 20px;
@@ -212,43 +214,46 @@ top: 110px;
 
     color: #a31515;
   font-weight: bolder;
-  font-size:20px;
-  bottom: 20px;
- left: 20px;
+  font-size:30px;
+  top:  12px;
+ right: 350px;
     
 }
-@media  only screen and (max-width: 600px) {#text1 h1{
+@media  only screen and (max-width: 520px) {#text1 h1{
   font-size: 16px;
     position: relative;
   width: 100px;
+    bottom: 200px
   
   
   }}
 
 
-@media  only screen and (max-width: 600px) {#text1 p{
+@media  only screen and (max-width: 520px) {#text1 p{
   font-size: 12px;
   position:relative;
   right: 120px;
+    bottom: 200px
   }}
 
 
-@media  only screen and (max-width: 600px) {#text2 h2{
+@media  only screen and (max-width: 520px) {#text2 h2{
   font-size: 16px;
   position: relative;
-  left: 80px;
-  top: 110px;
+  right:  80px;
+  top: -60px;
   width: 80px;
 
 
   }}
 
-@media  only screen and (max-width: 600px) {#text2 p{
+@media  only screen and (max-width: 520px) {#text2 p{
   font-size: 12px;
   position:relative;
  line-height: 150%;
-  left: 50px;
-  top: 100px;
+  right: 120px;
+  top: -50px;
+    width: 350px
   }}
 
 
@@ -256,6 +261,18 @@ top: 110px;
 
 
 /*....video...*/
+#textv p{
+position: relative;
+left: 40px;
+    top:  150px;
+    font-family: 'Special Elite', cursive;
+    font-weight: bold
+}
+
+
+
+
+
 #call1{
   display: none;
 }
@@ -263,8 +280,9 @@ top: 110px;
 {
   display: none;
   position: relative;
-  top: 50px;
-  left: 600px;
+  top: 40px;
+  left: 300px;
+    margin: 20px
 }
 
 input[type=checkbox]{
@@ -288,8 +306,8 @@ input[type=checkbox]{
   display: block;
   border-radius: 100px;
   position: relative;
-  left: 390px;
-  top: 50px
+  left: 60px;
+  top: 130px
   
 
 }
@@ -323,28 +341,27 @@ input:checked +label:after {
   width: 30px;
 }
 
-#picturetext p{
-  position: relative;
-  top: -20px;
-  left: 370px;  font-family: 'Special Elite', cursive;
-  font-weight: bold;
+
+@media  only screen and (max-width: 520px) {#textv p{
+    position: relative;
+    top: 180px;
+    left: -4px;
+    }
 
 }
-@media  only screen and (max-width: 500px){.video label{
-  position: relative;
-  left: 1px;
-  top: 130px;
-  }}
-  
+@media  only screen and (max-width: 520px) {.video label{
+    
+position: relative;
+    left: 20px;
+    top: 160px
+    }}
 
-
-
-@media  only screen and (max-width: 500px){ #picturetext p{
-  position: relative;
- left: 5px;
- top:  50px;
-  }}
-
+@media  only screen and (max-width: 520px) {.pic{
+    position: relative;
+    left: 40px;
+    top: -30px;
+    margin: 10px
+    }}
 
 /*....footer...*/
 
@@ -363,7 +380,7 @@ input:checked +label:after {
 .footer #button:hover{
   width:35px;
   height:35px;
-  border: #3f3f3f 12px solid;
+  border: grey 12px solid;
   transition: all 1s ease;
   position:relative;
   
@@ -387,7 +404,7 @@ input:checked +label:after {
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
-  height:8em;
+  height:10em;
 }
 .footer #container{
   margin-top:5px;
@@ -413,9 +430,9 @@ input:checked +label:after {
 }
 
 
-@media  only screen and (max-width: 700px) {
-  width: 30px
-  }
+
+
+
   .footer #button{
     width:10px;
     height:10px
@@ -425,34 +442,34 @@ input:checked +label:after {
 
   #contact h3{
 position: relative;
-right: 420px;
+right: 620px;
 top: 38px;
-      font-size: 14px;
+      font-size: 20px;
 }
 
 
   #contact p{
     line-height: 4px;
     position: relative;
-    right: 420px;
+    right: 620px;
     top: 35px;
-    font-size: 12px;
+    font-size: 17px;
 
 }
 
 
 #quick h3{
   position: relative;
-  bottom: 56px;
-  font-size: 14px;
+  bottom: 86px;
+  font-size: 20px;
 }
 
 #quick p a{position: relative;
-  bottom: 65px;
+  bottom: 95px;
   text-decoration-line: none;
   color:black;
-  line-height: 18px;
-    font-size: 12px;
+  line-height: 25px;
+    font-size: 17px;
 
 }
 @media  only screen and (max-width: 600px){#quick h3{
@@ -472,8 +489,8 @@ top: 38px;
   
 .icons{
   position: relative;
-  bottom: 198px;
-  left: 613px;
+  bottom: 273px;
+  left: 813px;
   display: flex;
     font-size: 10px
 
@@ -513,17 +530,50 @@ a {
 
 #logolink h4{
   position: relative;
-  bottom: 160px;
-  left: 420px;
+  bottom: 220px;
+  left: 620px;
+    font-size: 20px
 }
 #logolink p{
   position: relative;
-  left: 420px;
-  bottom: 130px;
-    font-size: 10px
+  left: 620px;
+  bottom: 190px;
+    font-size: 16px
 }
 
 
+@media  only screen and (max-width: 520px) {#contact{
+    position: relative;
+    left: 460px;
+    position: relative;
+    
+    }
+#contact p{
+    font-size: 15px;
+    
+}
+    #contact h3{
+    font-size: 17px;
+    
+    }
+
+    #quick {
+        line-height:0.1em;
+    position: relative;
+    top: -40px;
+        left: 90px;
+    }
+
+    #quick h3{
+    position: relative;
+    top:  -25px;
+    }
+
+    .icons {
+    position: relative;
+    left:  390px;
+        /*....not working..*/
+    }}
 
 /*...terms page...*/
 
@@ -805,44 +855,127 @@ top: 80px;
  
 
 
+
+.container th h1 {
+  font-weight: bolder;
+  font-size: 1em;
+  text-align: left;
+  color: #080808;
+}
+
+.container td {
+  font-weight: normal;
+  font-size: 1em;
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+  -moz-box-shadow: 0 2px 2px -2px #0E1119;
+  box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+.container {
+  text-align: left;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  display: table;
+  padding: 0 0 8em 0;
+}
+
+.container td, .container th {
+  padding-bottom: 2%;
+  padding-top: 2%;
+  padding-left:2%; 
+    font-weight: bold;
+    
+}
+
+/* Background-color of the odd rows */
+.container tr:nth-child(odd) {
+  background-color: #c1c1c1;
+}
+
+/* Background-color of the even rows */
+.container tr:nth-child(even) {
+  background-color: #d4d4d4;
+}
+
+.container th {
+  background-color: #6a6a6a;
+}
+
+.container td:first-child { color: #000000; }
+
+.container tr:hover {
+  background-color: #888888;
+  -webkit-box-shadow: 0 6px 6px -6px #888888;
+  -moz-box-shadow: 0 6px 6px -6px #888888;
+  box-shadow: 0 6px 6px -6px #888888;
+}
+
+.container td:hover {
+  background-color: #888888;
+  color: #000000;
+  font-weight: bold;
+
+  
+}
+
+@media (max-width: 800px) {
+  .container td:nth-child(4),
+  .container th:nth-child(4) { display: none; }
+}
+
+
+
+
 /*....job page...*/
 
 #content1 h2{
-font-size: 20px;
+font-size: 25px;
  color: #a31515;
+    
 }
 #content1 h3{
  color: #a31515;
-    font-size: 15px
+    font-size: 20px
     
 }
 
 #content1 {
-  width: 395px;
+  width: 695px;
   float: left;
   padding: 5px 15px;
   margin: 20px;
   font-family: 'Special Elite', cursive;
-  line-height: 25px; 
+  line-height: 30px; 
  position: relative;
   top: 2px;
- font-size: 13px;
     font-weight: bold;
+    font-size: 20px;
 }
+
+#content1 p{
+font-size: 20px;}
+
+
+
+
+
+
 #middle1 h2{
   font-weight: bolder;
   position: relative;
+    right: 50px;
  color: #a31515;
-    font-size: 20px;
+    font-size: 25px;
 }
 #middle1 h3{
     color: #a31515;
-    font-size: 15px
+    font-size: 20px
     
 }
 
 #middle1 {
-  width:395px; 
+  width:695px; 
   float: left;
   padding: 5px 15px;
   margin: 0px 5px 5px 5px;
@@ -851,7 +984,7 @@ font-size: 20px;
   font-family: 'Special Elite', cursive;
   position: relative;
   top: 20px;
-  font-size: 13px;
+  font-size: 20px;
     left: 120px;
     font-weight: bold;
 
@@ -932,82 +1065,61 @@ font-size: 20px;
 }
 
 
-/*....resources page...*/
+/*.....resources..page..*/
 
-iframe{
+#video2 {
 position: relative;
-bottom: 100px;
-    right: 390px;
+left: 60px;
+}
+#text5 p{
+width: 500px;
+position: relative;
+left: 560px;
+top: 100px;
+font-size: 20px;
+font-weight: bold;
+line-height: 30px;}
+
+#text5 h3{
+    position: relative;
+    left: 500px;
+    top: 70px;
+    color: #a31515;
+    font-size: 25px;
     
 }
 
 
-#text5 p{
-    width: 500px;
-position: relative;
-left: 400px;
-top: 100px;
-    font-weight: bold;
-    line-height: 30px;
-}
-#text5 h3{
-color: #a71010;
-position: relative;
-left: 390px;
-    top: 100px
-}
-
-
 #text6 h3{
-width: 500px;
-position: relative;
-left: 450px;
-top: 10px;
-    color: #a71010;
-}
-
-#text6 p{
-position: relative;
-top: 10px;
-left: 370px;
-line-height: 30px;
-font-weight: bold;
-}
-
-#text6{
-position: relative;
-left: 200px;
-bottom: 120px;
-
-}
-
-
-#text6 i{
-position: relative;
-left: 270px;
-bottom:  195px;
-    font-size: 23px;
-}
-#text6 a{
-
-position: relative;
-left: 583px;
-bottom: 38px}
-
-
-#text7{
-position: relative;
-top: 20px;
-}
-#text7 p {
-line-height: 30px;
-font-weight: bold;
     position: relative;
-    left: 50px;
-    padding: 30px
+    left: 900px;
+    bottom:  120px;
+    color: #a31515;
+    font-size: 25px;
+    
 }
+#text6 p{
+width: 800px;
+position: relative;
+left: 950px;
+bottom:  100px;
+font-size: 20px;
+font-weight: bold;
+line-height: 30px;}
 
 #text7 h3{
-     color: #a71010;
+    position: relative;
+    left: 30px;
+    bottom:  120px;
+    color: #a31515;
+    font-size: 25px;
+    
 }
-
+#text7 p{
+width: 800px;
+position: relative;
+left: 50px;
+bottom:  100px;
+font-size: 20px;
+font-weight: bold;
+line-height: 30px;}
