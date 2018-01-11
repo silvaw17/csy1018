@@ -1,0 +1,32 @@
+
+  <section id="text1">
+<h1>Who are we?</h1>
+    <p>
+      We are a highly trained and
+      <br>friendly individuals who are dedicated
+      <br>to bringing your imagination to reality.
+      <br> designing with passion for a beautiful and
+      <br>functional user experiences.</p>
+      </section>
+
+
+  <section id="text2">
+    <h2> Our Team</h2>
+    <p>
+      Grand Tech Web has been very fortunate enough to have such
+      <br>talented developers from HTML specialist to experts in
+      <br> JavaScript. We are a united team we’ve been together for almost
+      <br> 5 years and counting.We have been through the most intense
+      <br>website design to the most beautiful interface designs.
+      <br> We are a dedicated, motived and friendly team.</p>
+
+
+  
+    
+  
+
+  
+
+
+
+ 

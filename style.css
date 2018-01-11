@@ -1,0 +1,1874 @@
+html{
+
+  max-height: 100%;
+  max-width: 100%;
+ 
+
+
+}
+
+body.index{
+background:url(pictures/imac-min.jpg);
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+background-color: #E2E2E2;
+  padding: 0;
+  overflow-x: hidden;
+ 
+}
+
+body.terms{
+background:url(pictures/guywithlaptop.jpg);
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+background-color: #373636;
+  margin:0 auto;
+  padding: 0;
+  background-attachment: fixed;
+  overflow-x: hidden
+}
+
+
+header{
+height: 5em;
+  width: 100%;
+background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 1
+}
+
+
+.wrapper{
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -100px;
+}
+/*...logo*/
+
+
+  .logo img{
+    border-radius:60%;
+    align-items:center;
+    margin: 1%;
+    position: relative;
+    bottom: 9em;
+    
+}
+/*...other pages logo...*/
+.logo2 img{
+    border-radius:60%;
+    align-items:center;
+    margin: 2%;
+    position: relative;
+    bottom: 1.5em;
+ height: 70px;
+  z-index: 1
+
+    
+
+}
+
+
+@media  only screen and (max-width: 520px){
+  .logo img{
+  height: 4em;
+  position: relative;
+  bottom: 9em;
+  
+  }
+  .logo2 img{
+   height: 4em;
+  margin: 1em;
+  bottom: 0.1em}
+  
+}
+
+
+/*.... other pages navbar...*/
+
+
+#navterms
+{
+  text-align: right;
+ 
+
+    
+
+}
+
+
+ #navterms li{
+  margin: 10px;
+    font-family:'Roboto';
+  display: inline-block;
+   position: relative;
+  left: 550px;
+  top:  1em;
+   color: white
+   
+
+}
+
+
+ #navterms ul a{
+   text-decoration: none;
+   
+}
+ #navterms a:hover{
+  color: #a71010;
+}
+
+nav a::before{
+  content: "";
+  display: block;
+  height: 6px;
+  width: 0%;
+  background: #a31515;
+  position: relative;
+  bottom: 20px;
+  transition: all ease-in-out 200ms;
+}
+
+
+nav a:hover::before{
+  width: 100%;
+ 
+}
+
+.nav label{
+font-size: 26px;
+display: none;
+  position: relative;
+  width:20px;
+left: -10em;
+  top: 1em;
+}
+
+ #toggle{
+display: none;
+}
+
+
+@media only screen and (max-width:500px){ .nav label{
+  display: block;
+  cursor: pointer;
+  }
+  
+  
+  .menu2 ul li {
+    text-align: center;
+    width: 100%;
+    display:none;
+    
+    
+  
+  }
+  .menu2 ul li {
+  display: none;
+    margin: 0;
+    width: 5em;
+    position: relative;
+    right:  22em;
+  top: 2em;
+  
+    
+  }
+  
+  #toggle:checked + .menu2 ul li{
+    display: block;
+  
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav {position: relative;
+
+  bottom: 240px;
+  font-size:0.8em;
+  font-family:'Roboto';
+    position: relative;
+    left:  74%;
+  word-spacing: 20px;
+  
+  
+}
+nav ul{
+  list-style: none;
+  
+  position: relative;
+  
+  
+  
+  
+}
+ul{
+  margin: 0%;
+  padding: 0%;
+  width: 710px;
+}
+
+nav li{
+  display:inline-block;
+ 
+  list-style-type:none;
+ 
+  position: relative;
+  
+  
+}
+nav a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  
+}
+nav a:hover{
+  color: #a71010;
+}
+
+nav a::before{
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0%;
+  background: #a31515;
+  position: absolute;
+  bottom: 20px;
+  transition: all ease-in-out 200ms;
+}
+
+
+nav a:hover::before{
+  width: 100%;
+ 
+}
+
+  nav a:hover::before{
+    width: 85%;
+  }
+
+
+
+ .menu1 label{
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  display: none;
+  position: relative;
+  left:12.5em;
+   bottom:8em;
+   width: 3em;
+   height: 3em;
+  
+}
+#toggle {
+  display: none;
+}
+
+@media  only screen and (max-width: 520px){ .menu1 label{
+  display:block;
+  cursor: pointer;
+  }
+  
+.menu ul li{
+  text-align: center;
+  width: 100%;
+  display: block;
+  position: relative;
+  font-size: 13px;
+  width: 8em;
+  line-height: 20px;
+  margin: 0%;
+  right: 2.5em;
+
+  
+}
+  nav a:hover::before{
+    width: 0%;
+  }
+
+
+
+
+#toggle:checked + .menu ul li{
+  display: block;
+}
+
+
+}
+
+
+
+
+
+
+/*...ARROW>>>*/
+  
+  
+.scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 90px;
+  height: 0;
+  width: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.scroll:before {
+  content: '';
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  height: 30px;
+  width: 40px;
+  margin-top: -5px;
+  margin-left: -15px;
+  background: -webkit-gradient(linear, left top, right bottom, from(black), to(gray));
+  background: linear-gradient(top left, #e84c00, #c10040);
+  -webkit-clip-path: polygon(15% 0, 50% 60%, 85% 0, 100% 20%, 50% 100%, 0 20%);
+  clip-path: polygon(15% 0, 50% 60%, 85% 0, 100% 20%, 50% 100%, 0 20%);
+  -webkit-animation: bounce 2s ease infinite;
+  animation: bounce 2s ease infinite;
+}
+
+@-webkit-keyframes bounce {
+  50% {
+    -webkit-transform: scale(0.75) translateY(-50%);
+    transform: scale(0.75) translateY(-50%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/*...created by Alex
+@akwright...*/
+
+
+
+
+/*...index...*/
+
+#title h1{
+font-family: 'Titillium Web', sans-serif;
+    color: white;
+    font-size: 3em;
+    position:absolute;
+    left: 10%;
+  top: 28%;
+   padding:0%;
+  margin:0%;
+  
+     
+}
+
+#title h2{
+  color: white;
+font-family: 'Titillium Web', sans-serif;
+     font-size: 3em;
+     position: absolute;
+  left: 26.7%;
+  bottom: 57%;
+ 
+}
+
+
+
+@media  only screen and (max-width: 520px){ #title h1{
+  font-size: 2em;
+  position: relative;
+  bottom: 2.1em;
+  
+  
+
+  }
+#title h2{
+  font-size: 2em;
+  position: relative;
+   left:  33px;
+  bottom:3em;
+margin: 1px;
+  }}
+/*...team picture...*/
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+*{
+  padding:0;
+  margin:0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section#team{
+ 
+  position: relative;
+  top: 580px;
+}
+
+.team{
+  height: 60vh;
+  text-align: center;
+  font-size: 17px;
+  background: no-repeat center center;
+  background-size: cover;
+  background-image: url("test.jpg");
+ 
+  
+ 
+}
+
+.team-1{
+  background-image: url("pictures/william.JPG");
+}
+
+.team-2{
+  background-image: url("pictures/joe-min.jpg");
+}
+
+.team-3{
+  background-image: url("pictures/stefan-stefancik-257627-min.jpg");
+}
+
+.team .content{
+  color: #fff;
+  height: 100%;
+  visibility: hidden;
+  background: rgba(0,0,0,0.5);
+  padding: 10%;
+}
+
+.content h1{
+  font-size: 2em
+}
+
+.team:hover .content{
+  visibility: visible;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 30em) {
+  .row{
+      flex-wrap: wrap;
+  }
+  .content h1{
+  font-size: 1.3em
+}
+}
+
+/*....A PEN BY Andrew Dean....*/
+
+
+/*.....video...*/
+  
+  
+#video {
+position: relative;
+left:170px;
+  width: 100%;
+    height: auto;
+top: 600px}
+
+@media only screen and (max-width: 30em) {#video{
+ position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+  position: relative;
+  left: -3px;
+  }
+}
+
+
+
+
+
+
+/*...terms page...*/
+
+#pagewrap {
+  padding: 5px;
+  width: 960px;
+  margin: 20px auto;
+  
+}
+
+#content p{
+  text-align: center;
+  line-height: 27px;
+ 
+  
+  
+}
+
+#content {
+  width: 220px;
+  float: left;
+  padding: 5px 15px;
+  margin: 20px;
+  font-family: 'Special Elite', cursive;
+ font-weight: bold;
+  line-height: 25px; 
+  position: relative;
+top: 80px;
+  background: ;
+  left: 100px;
+  border-radius: 13%;
+  height: 400px;
+    border-color: black;
+ 
+  
+  
+
+}
+#content{ 
+   
+    border: 1px  #CCC solid;
+    
+    box-shadow: 
+        inset 5px 11px 15px -10px #cCC,
+        inset 4px -11px 8px -10px #CCC; 
+}
+
+#content h2{
+  color: #a71010;
+    font-size: 20px
+
+}
+#middle h2{
+  color: #a71010;
+    font-size: 20px
+}
+#middle p,h2{
+  text-align: center
+}
+#middle{
+    border: 1px  #CCC solid;
+    
+    box-shadow: 
+        inset 5px 11px 15px -10px #cCC,
+        inset 4px -11px 8px -10px #CCC; 
+}
+
+#middle {
+  width:220px; 
+  float: left;
+  padding: 5px 15px;
+  margin: 0px 5px 5px 5px;
+  position: relative;
+  line-height: 25px;
+  font-family: 'Special Elite', cursive;
+  font-weight: bold;
+  position: relative;
+  top: 105px;
+  line-height: 25px; 
+  left: 400px;
+  
+  
+  border-radius: 13%;
+  height: 400px;
+    
+
+  
+
+
+}
+
+
+#end {
+  width:210px; 
+  float: left;
+  padding: 5px 15px;
+  margin: 0px 5px 5px 5px;
+  position: relative;
+  line-height: 25px;
+  font-family: 'Special Elite', cursive;
+  font-weight: bold;
+  position: relative;
+  top: 659px;
+  line-height: 25px; 
+  right: 440px;
+  border-radius: 13%;
+  height: 400px;
+  text-align: center; 
+    border: 1px  #CCC solid;
+    box-shadow: 
+        inset 5px 11px 15px -10px #cCC,
+        inset 4px -11px 8px -10px #CCC; 
+}
+
+
+
+#end h1{
+  color: #a71010;
+    font-size: 20px
+}
+
+
+#end2 {
+  width:210px; 
+  float: left;
+  padding: 5px 15px;
+  margin: 0px 5px 5px 5px;
+  line-height: 25px;
+  font-family: 'Special Elite', cursive;
+  font-weight: bold;
+  position: relative;
+  top: 660px;
+  right: 110px;
+  line-height: 25px;
+  border-radius: 10%;
+  height: 400px;
+  text-align: center;
+    border: 1px  #CCC solid;
+    box-shadow: 
+        inset 5px 11px 15px -10px #cCC,
+        inset 4px -11px 8px -10px #CCC; 
+}
+
+  
+
+
+#end2 h1{
+  color: #a71010;
+    font-size: 20px
+  
+}
+@media screen and (max-width: 580px) {
+
+  
+
+  #content {
+    width: 41%;
+    padding: 1% 4%;
+    font-size: 15px;
+    left: -4px
+    
+
+  }
+  #content h2{
+    color: #a71010
+
+  }
+  #middle h2{
+    color: #a71010
+  }
+  #middle {
+    width: 41%;
+    padding: 1% 4%;
+    float: right;
+    font-size: 15px;
+    position: relative;
+    
+    left: 20px;
+  }
+
+ 
+
+}
+
+
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+  #content {
+    width: 200px;
+    float:none;
+    font-size: 15px;
+   
+    
+
+  }
+  #content h2{
+    color: #a71010
+    
+  }
+  #middle h2{
+   color: #a71010
+  }
+  #middle {
+    width: 75%;
+    float: none;
+    margin-left: 0px;
+    font-size: 15px;
+
+  }
+  #end{width: auto;
+    float: none;
+    width: 75%;
+    left: 17px;
+    
+    
+  }
+
+
+#end2{width: auto;
+  float: none;
+  width: 75%;
+  }}
+
+.tooltip {
+  color: #000000; outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+}
+.tooltip span {
+  margin-left: -999em;
+  position: absolute;
+
+}
+.tooltip:hover span {
+  border-radius: 5px 5px;
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); 
+  -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); 
+  -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 2em;
+  top: 2em; 
+  z-index: 99;
+  margin-left: 0; 
+  width: 150px;
+  color: darkred;
+  font-weight: bolder;
+    font-size: 13px
+}
+
+
+.classic { padding: 0.8em 1em; }
+
+
+.classic {background: #f3f3f3; border: 1px solid #000000; }
+
+@media screen and (max-width: 600px) { .tooltip:hover span{
+  width: 110px;
+  font-size: 12px
+  }
+  }
+ 
+
+
+
+.container th h1 {
+  font-weight: bolder;
+  font-size: 1em;
+  text-align: left;
+  color: white;
+}
+
+.container td {
+  font-weight: normal;
+  font-size: 1em;
+  -webkit-box-shadow: 0 2px 2px -2px white;
+  -moz-box-shadow: 0 2px 2px -2px white;
+  box-shadow: 0 2px 2px -2px white;
+}
+
+.container {
+  text-align: left;
+  overflow: hidden;
+  width: 70%;
+  margin: 0 auto;
+  display: table;
+  padding: 0 0 8em 0;
+  position: relative;
+  top: 150px;
+  color: white
+}
+
+.container td, .container th {
+  padding-bottom: 2%;
+  padding-top: 2%;
+  padding-left:2%; 
+    
+    
+}
+
+/* Background-color of the odd rows */
+.container tr:nth-child(odd) {
+  background-color: #403F3F;
+}
+
+/* Background-color of the even rows */
+.container tr:nth-child(even) {
+  background-color: #181616;
+}
+
+.container th {
+  background-color: #6a6a6a;
+}
+
+.container td:first-child { color: white; }
+
+.container tr:hover {
+  background-color: #888888;
+  -webkit-box-shadow: 0 6px 6px -6px #888888;
+  -moz-box-shadow: 0 6px 6px -6px #888888;
+  box-shadow: 0 6px 6px -6px #888888;
+}
+
+.container td:hover {
+  background-color: #888888;
+  color: #000000;
+  font-weight: bold;
+
+  
+}
+
+@media (max-width: 800px) {
+  .container td:nth-child(4),
+  .container th:nth-child(4) { display: none; }
+}
+
+
+
+
+/*....job page...*/
+#white {
+height: 1500px;
+background-color:#e4e4e4;
+position: relative;
+top: 6em;
+  
+  background: rgba(204, 204, 204, 0.6);
+}
+
+
+#picture1 img{
+position: relative;
+width: 21em;
+  left: 28em;
+  bottom: 84.9em;
+  opacity: 0.8;
+  border-radius: 40%;
+}
+
+@media only screen and (max-width: 800px) {#picture1 img{
+display: none
+  }
+
+}
+#content2  h3{
+position: relative;
+  top: 20em;
+    float: right;
+  right: 21em;
+font-family: 'Special Elite', cursive;
+  font-weight: bold;
+   color: #a71010;
+  
+
+  
+
+  
+
+
+}
+
+#web p{font-family: 'Special Elite', cursive;
+  font-weight: bold
+}
+
+#web a{font-family: 'Special Elite', cursive;
+  font-weight: bold
+}
+#content2 p{
+  width: 30em;
+  float: right;
+  position: relative;
+  top: 26em;
+  left: 6em;
+
+  line-height: 1.5em;
+font-family: 'Special Elite', cursive;
+font-weight: bold
+
+}
+
+#web{
+float: right;
+position: relative;
+top: 38em;
+left: 36em;
+  width: 30em
+
+  
+}
+
+#web h3,h4{
+  line-height: 1.5em;
+  font-family: 'Special Elite', cursive;
+font-weight: bold;
+   color: #a71010;
+  
+   
+}
+
+#web li{
+font-family: 'Special Elite', cursive;
+
+
+line-height: 1.5em;
+position: relative;
+top: 1em;
+  font-weight: bold;
+}
+
+
+#middle1{
+position: relative;
+bottom: 81em;
+  width: 30em;
+  left: 3em;
+}
+
+
+#middle1 h3{
+   line-height: 1.5em;
+  position: relative;
+font-family: 'Special Elite', cursive;
+  font-weight: bold;
+   color: #a71010;
+  
+}
+
+#middle1 li{
+
+  
+line-height: 1.5em;
+position: relative;
+  font-family: 'Special Elite', cursive;
+  font-weight: bold;
+}
+
+#middle1 p{
+font-family: 'Special Elite', cursive;
+  font-weight: bold;
+
+
+}
+#middle1 a{
+font-family: 'Special Elite', cursive;}
+
+
+
+
+
+
+
+
+
+
+/*....ipad screen...*/
+
+
+@media only screen and (max-width: 850px) {#middle1 h3{
+  position: relative;
+  right: 36px;
+  width: 16em;
+  font-size: 1em;
+  bottom: 76em
+  }
+  
+  
+  #white{
+  height: 170em}
+  
+  #middle1 p {
+  position: relative;
+  right: 1.5em;
+  font-size: 0.9em;
+  width: 24em;
+    bottom: 85em
+  }
+  #middle1 li{ position: relative;
+  right: 35px;
+  width: 16em;
+  font-size: 1em;
+    bottom: 76em;
+  }
+  
+  #content2 p {
+  position: relative;
+  top: 97em;
+    width: 20em;
+   left: -11em;
+    
+  }
+  #content2 h3{
+  position: relative;
+  top:79em;
+  right:28em;
+  }
+  #web p{
+     position: relative;
+  top: 65em;
+    width: 20em;
+   right: 51.5em
+  }
+  #web h3{
+  position: relative;
+  right: 45em;
+  top: 53em;
+  width: 20em;
+ }
+  #web li{
+  position: relative;
+  right: 51em;
+  top: 63em;
+  width: 20em;
+  }
+  
+#picture1 img{
+position: relative;
+width: 21em;
+  left: 1em;
+  bottom: 143.8em}
+}
+
+/*....phone with 650px screen...*/
+@media only screen and (max-width: 650px) {#middle1 h3{
+  position: relative;
+  right: 40px;
+  width: 16em;
+  font-size: 1em;
+  bottom: 56em
+  }
+  
+  #white{
+  height: 150em}
+  
+  #middle1 p {
+  position: relative;
+  right: 2.5em;
+  font-size: 0.9em;
+  width: 24em;
+    bottom: 62em
+  }
+  #middle1 li{ position: relative;
+  right: 40px;
+  width: 16em;
+  font-size: 1em;
+    bottom: 54em;
+  }
+  
+  #content2 p {
+  position: relative;
+  top: 67em;
+    width: 20em;
+   left: -5em;
+    
+  }
+  #content2 h3{
+  position: relative;
+  top:57em;
+  right:10em;
+  }
+  #web p{
+     position: relative;
+  top: 38em;
+    width: 20em;
+   right: 30.5em
+  }
+  #web h3{
+  position: relative;
+  right: 27em;
+  top: 30em;
+  width: 20em;
+ }
+  #web li{
+  position: relative;
+  right: 32em;
+  top: 37em;
+  width: 20em}
+}
+
+/*.....phones with 400px....*/
+@media only screen and (max-width: 400px) {#middle1 h3{
+  position: relative;
+  right: 40px;
+  width: 15em;
+  font-size: 1em;
+ bottom: 67em
+  }
+  
+  #white{
+  height: 250em}
+  
+  
+  
+  #middle1 p {
+  position: relative;
+  right: 2.5em;
+  font-size: 0.9em;
+  width: 16em;
+    bottom: 74em
+  }
+  #middle1 li{
+  position: relative;
+  top: -66em}
+
+  #content2 p {
+  position: relative;
+  top: 2em;
+    width: 15em;
+   left: -5em;
+    
+  }
+  #content2 h3{
+  position: relative;
+  top:1em;
+  right:6em;
+  }
+  #web p{
+     position: relative;
+  top:  -30em;
+    width: 15em;
+   right: 26.5em;
+  }
+  #web h3{
+  position: relative;
+  right: 23em;
+  top: -30em;
+  width: 15em;
+  
+ }
+  #web li{
+  position: relative;
+  top: -34em;
+  left: -27em }
+}
+
+/*...pop up box....*/
+
+
+.modal-container {
+  margin: 60px auto;
+  padding-top: 0px;
+  position: relative;
+  width: 160px;
+  bottom: 80em;
+  right: 3em;
+ font-family: 'Special Elite', cursive;
+}
+
+.modal-container .modal-btn {
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  width: 160px;
+  height: 50px;
+  line-height: 50px;
+  background: #446CB3;
+  font-size: 22px;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 5px 5px -5px #333;
+  transition: background 0.3s ease-in;
+}
+
+.modal-container .modal-btn:hover {
+  background: #365690;
+}
+
+.modal-container .modal-content,
+.modal-container .modal-backdrop {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in;
+}
+
+.modal-container .modal-close {
+  color: #aaa;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding-top: 3px;
+  background: #fff;
+  font-size: 16px;
+  width: 25px;
+  height: 25px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.modal-container .modal-close:hover {
+  color: #333;
+}
+
+.modal-container .modal-content-btn {
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  bottom: 20px;
+  right: 30px;
+  background: #446CB3;
+  color: #fff;
+  width: 50px;
+  border-radius: 2px;
+  font-size: 14px;
+  height: 32px;
+  padding-top: 9px;
+  font-weight: normal;
+}
+
+.modal-container .modal-content-btn:hover {
+  color: #fff;
+  background: #365690;
+}
+
+.modal-container #modal-toggle {
+  display: none;
+}
+
+.modal-container #modal-toggle.active ~ .modal-backdrop,
+.modal-container #modal-toggle:checked ~ .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+
+.modal-container #modal-toggle.active ~ .modal-content,
+.modal-container #modal-toggle:checked ~ .modal-content {
+  opacity: 1;
+  background-color: #fff;
+  max-width: 400px;
+  width: 400px;
+  height: 280px;
+  padding: 10px 30px;
+  position: fixed;
+  left: calc(50% - 200px);
+  top: 12%;
+  border-radius: 4px;
+  z-index: 999;
+  pointer-events: auto;
+  cursor: auto;
+  visibility: visible;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 500px) {
+  .modal-container #modal-toggle.active ~ .modal-content,
+  .modal-container #modal-toggle:checked ~ .modal-content {
+    width: 15em;
+    position: relative;
+   margin-left:  5em;
+    bottom: 11em
+  }
+}
+
+@media (max-width: 830px) {
+  .modal-container #modal-toggle.active ~ .modal-content,
+  .modal-container #modal-toggle:checked ~ .modal-content {
+    width: 15em;
+    position: relative;
+   margin-left:  1em;
+    bottom: 13em
+  }
+}
+@media only screen and (max-width: 30em){
+  .modal-container .modal-btn{
+  position: relative;
+    top:14em }}
+@media only screen and (max-width: 400px){
+  .modal-container .modal-btn{
+  position: relative;
+    top:-36em }}
+/*BY HIMA VINCENT........https://codemyui.com/pure-css-modal-box-on-button-click/*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#white1{
+height: 140em;
+background-color:#E2E2E2;
+position: relative;
+top: 6em;
+  width: 100%;
+ 
+    background: rgba(204, 204, 204, 0.6);
+}
+#background1{
+  position: relative;
+  height: 1em;
+  z-index: -1;
+}
+
+#title3 h1{
+font-family: 'Cabin Sketch', cursive;
+  font-size: 9em;
+  position: relative;
+  color: darkred;
+  left: 1.2em;
+  bottom: 0.1em;
+  
+}
+#title3 h2{
+font-family: 'Cabin Sketch', cursive;
+  font-weight: bolder;
+position: relative;
+  color: #353638;
+  font-size: 1.5em;
+  bottom: 6.1em;
+  right: 13.8em
+}
+#title3 h3{
+  font-size: 2em;
+ font-family: 'Cabin Sketch', cursive;
+
+  position: relative;
+  left: 11.6em;
+  bottom: 5.7em;
+  
+}
+
+
+#title3 h4{
+  font-family: 'Cabin Sketch', cursive;
+  font-weight: bolder;
+position: relative;
+  color: #353638;
+  font-size: 1.5em;
+  bottom: 9em;
+  left: 21.2em
+}
+
+#title3 h5{
+  font-family: 'Cabin Sketch', cursive;
+  font-weight: bolder;
+position: relative;
+  color: #353638;
+  font-size: 1.5em;
+  bottom: 8.4em;
+  left: 14em
+}
+
+#title3{
+position: relative;
+right: 4em;
+}
+
+#list{
+  width: 50em;
+position: relative;
+left: 9em;
+bottom: 5em}
+#list h2{
+  font-family: 'Special Elite', cursive;
+position: relative;
+float: left;
+font-size: 1em;
+  color:white;
+  
+}
+
+#list h3{
+font-family: 'Special Elite', cursive;
+color: darkred;
+position: relative;
+top: 1em;}
+
+#list p{
+font-family: 'Special Elite', cursive;
+line-height: 1.5em;
+font-weight: bold;
+position: relative;
+left: 4em;
+top: 0.5em;
+}
+#list a{
+color: darkred;
+text-decoration-line: none;
+}
+
+
+
+@media only screen and (max-width: 990px) {#list{
+  
+width: 34em;
+  position: relative;
+  left:  1em}
+
+  #title3{
+    font-size: 0.9em}
+  #title3 h2
+  {
+  position: relative;
+  right: 3.5em}
+}
+
+
+
+@media only screen and (max-width: 600px) {#list{
+  
+width: 24em;
+  position: relative;
+  left:  4em}
+
+  #title3{
+    font-size: 0.9em}
+  #title3 h2
+  {
+  position: relative;
+  right: 3.5em
+  ; margin: 1em}
+}
+
+
+
+
+
+@media only screen and (max-width: 499px) {#list{
+  
+width: 14em;
+  position: relative;
+  left:  8em;
+   margin: 1em}
+
+  #title3{
+    font-size: 0.7em;
+  position: relative;
+  left: 2em;
+   margin: 1em}
+}
+
+
+
+
+@media only screen and (max-width: 470px) {#list{
+  
+width: 16em;
+  position: relative;
+  left:  1em;
+   margin: 0.5em;
+  padding: 1em;}
+
+  #title3{
+    font-size: 0.6em;
+  position: relative;
+left: -6em;
+   margin: 1em}
+}
+
+
+
+
+@media only screen and (max-width: 390px) {#list{
+  
+width: 16em;
+  position: relative;
+  left:  1em;
+   margin: 0.5em;
+  padding: 1em;}
+
+  #title3{
+    font-size: 0.6em;
+  position: relative;
+left: -6em;
+   margin: 1em}
+}
+
+
+
+
+
+
+@media only screen and (max-width: 370px) {#list{
+  
+width: 14em;
+  position: relative;
+  left:  1em;
+  margin: 1em}
+
+  #title3{
+    font-size: 0.4em;
+  position: relative;
+  right:4.5em;
+   margin: 1em}
+}
+
+
+
+
+
+
+
+
+
+
+/*...UI page..*/
+#white3 {
+height:100em;
+background-color:#e4e4e4;
+position: relative;
+top: 6em;
+  
+  background: rgba(204, 204, 204, 0.6);
+}
+#text10 h4{
+font-size: 2.5em;
+font-family: 'Cabin Sketch', cursive;
+  color: black;
+  position: relative;
+  bottom: 3em;
+  left: 7.3em;
+  word-spacing: 1em
+}
+
+#text10 h1{
+font-size: 2.5em;
+font-family: 'Cabin Sketch', cursive;
+  color: darkred;
+   position: relative;
+  top:  0.7em;
+  left: 7.0em;
+}
+
+#text10 h2{
+font-size: 2.5em;
+font-family: 'Cabin Sketch', cursive;
+  color: darkred;
+  position: relative;
+  right: 4.3em;
+  bottom: 0.5em
+}
+#text10 h3{
+font-size: 2.5em;
+font-family: 'Cabin Sketch', cursive;
+  color: darkred;
+   position: relative;
+  bottom:  1.6em;
+  left: 16.8em;
+}
+
+#text10 h5{
+font-family: 'Special Elite', cursive;
+font-size: 1.3em;
+  position: relative;
+  bottom: 3em
+}
+
+#sitepic img{
+position: relative;
+bottom: 2em;
+  left: 12em;
+width: 60em}
+
+.text-block {
+    position: relative;
+    bottom: 23em;
+    left:  24em;
+    background-color: black;
+    color: white;
+    width: 34em;
+  height: 10em;
+  opacity: 0.7;
+  padding: 2em;
+  border-radius: 8%;
+  
+}
+.text-block p{
+  font-family: 'Special Elite', cursive;
+font-size: 1.1em;
+  line-height: 1.7em
+}
+#text15 {
+border-style: outset;
+border-color:black;
+border-width: 0.3em;
+width: 58em;
+position: relative;
+left: 13em}
+
+#text15 p{font-family: 'Special Elite', cursive;
+font-size: 1.1em;
+line-height: 1.6em;
+font-weight: bold;
+  padding: 1em
+}
+#text15 h5{font-family: 'Special Elite', cursive;
+  font-size: 1.5em;
+  color: darkred;
+  padding: 1em
+}
+
+
+
+/*....footer...*/
+
+.push,
+.footer{
+  height: 150px;
+  width: 100%;
+}
+
+.footer{
+  background: black
+    ;
+position: relative;
+  top: 900px;
+  width: 100%;
+  opacity: 0.8;
+  
+}
+  
+
+#contact h3{
+  position: relative;
+  left: 6.5%;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+ font-family: 'Cabin Sketch', cursive;
+  
+
+ 
+}
+
+#contact p{
+ text-align: center;
+position: relative;
+right: 40%;
+  padding: 0%;
+  margin: 0%;
+font-size:16px;
+line-height: 150%;
+  color: white;
+ font-family: 'Cabin Sketch', cursive;
+}
+
+#quick{
+display: flex;
+justify-content: center;
+position: relative;
+bottom: 125px;
+  left: 150px;
+  color: white;
+     font-family: 'Cabin Sketch', cursive;
+}
+
+#quick a{
+  color: white;
+text-decoration: none;
+position: relative;
+top: 30px;
+right: 70px;
+line-height: 150%;
+text-align: center;
+font-size:16px;
+     font-family: 'Cabin Sketch', cursive;
+
+
+}
+
+#quick a:hover{
+  color: #a71010;
+}
+
+
+#quick h6{
+position: relative;
+left: 360px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+#quick h5{
+position: relative;
+left: 20%;
+top: 100px;
+ height: 10px;
+  font-size: 12px;
+    color: white;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+
+.icons{
+  position: relative;
+  bottom: 153px;
+  left:85%;
+  display: flex;
+    font-size: 10px;
+  
+
+  
+
+}
+a {
+   color: inherit; 
+}
+
+
+.fa-stack:hover .fa-facebook {
+  color: blue;
+}
+.fa-stack:hover .fa-circle {
+  color: white;
+}
+
+
+.fa-stack:hover .fa-youtube{
+  color: red;
+}
+.youtube .fa-stack:hover .fa-circle {
+  color: white;
+ 
+  
+}
+
+.fa-stack:hover .fa-instagram{
+  color: #7a5f32;
+}
+.instagram .fa-stack:hover .fa-circle {
+  color: white;
+ 
+}
+
+
+@media  only screen and (max-width: 520px){#contact h3{
+  font-size: 0.9em;
+  position: relative;
+margin-left: -12px
+  
+  }
+  #contact p{
+  font-size: 0.7em;
+  position: relative;
+    margin-left: 20px;}
+  
+  
+  
+  
+  #quick h3{
+  font-size: 13px;
+    position: relative;
+    top: 2.5em;
+    right: 14px
+  }
+  #quick a{
+  font-size: 12px;
+  position: relative;
+  top: 5em;
+margin-right: 40px;
+  }
+  .icons{
+  font-size: 5px;
+  position: relative;
+  left:  270px;
+  margin-top: 30px;
+  }
+  
+  #quick h6{
+  position: relative;
+  left:  -49px;
+  top: 30px;
+  font-size: 14px;
+  }
+  
+  
+  #quick h5{
+position: relative;
+  left:-150px;
+  font-size: 11px;
+  top: 140px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
