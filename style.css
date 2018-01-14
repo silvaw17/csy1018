@@ -27,7 +27,7 @@ background-color: #373636;
   margin:0 auto;
   padding: 0;
   background-attachment: fixed;
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 
 
@@ -36,7 +36,7 @@ height: 5em;
   width: 100%;
 background: rgba(0, 0, 0, 0.6);
   position: fixed;
-  z-index: 1
+  z-index: 1;
 }
 
 
@@ -57,6 +57,8 @@ background: rgba(0, 0, 0, 0.6);
     bottom: 9em;
     
 }
+
+
 /*...other pages logo...*/
 .logo2 img{
     border-radius:60%;
@@ -65,14 +67,14 @@ background: rgba(0, 0, 0, 0.6);
     position: relative;
     bottom: 1.5em;
  height: 70px;
-  z-index: 1
+  z-index: 1;
 
     
 
 }
 
 
-@media  only screen and (max-width: 520px){
+@media  only screen and (max-width: 720px){
   .logo img{
   height: 4em;
   position: relative;
@@ -80,9 +82,8 @@ background: rgba(0, 0, 0, 0.6);
   
   }
   .logo2 img{
-   height: 4em;
-  margin: 1em;
-  bottom: 0.1em}
+   height: 3em;
+  bottom: 0.1em;}
   
 }
 
@@ -107,7 +108,7 @@ background: rgba(0, 0, 0, 0.6);
    position: relative;
   left: 550px;
   top:  1em;
-   color: white
+   color: white;
    
 
 }
@@ -152,62 +153,41 @@ display: none;
 }
 
 
-@media only screen and (max-width:500px){ .nav label{
-  display: block;
-  cursor: pointer;
-  }
-  
-  
-  .menu2 ul li {
-    text-align: center;
-    width: 100%;
-    display:none;
-    
-    
-  
-  }
-  .menu2 ul li {
-  display: none;
-    margin: 0;
-    width: 5em;
-    position: relative;
-    right:  22em;
-  top: 2em;
-  
-    
-  }
-  
-  #toggle:checked + .menu2 ul li{
-    display: block;
-  
-}
+@media only screen and (max-width:1250px){ #navterms{
+  position: relative;
+  right: 30em
+  }}
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media only screen and (max-width:800px){ #navterms{
+  position: relative;
+  left: -60em;
+  font-size: 0.7em
+  }}
+@media only screen and (max-width:600px){ #navterms{
+  position: relative;
+  left: -80em;
+  font-size: 0.6em
+  }}
+@media only screen and (max-width:500px){ #navterms{
+  position: relative;
+  left: -90em;
+  font-size: 0.6em
+  }}
+@media only screen and (max-width:410px){ #navterms{
+  position: relative;
+  left: -96em;
+  font-size: 0.6em;
+  word-spacing: -13px;
+  top: 1em
+  }}
+@media only screen and (max-width:348px){ #navterms{
+  position: relative;
+  left: -102em;
+  font-size: 0.6em;
+  word-spacing: -15px;
+  top: 1em
+  }}
+/*...index navbar*/
 
 
 nav {position: relative;
@@ -216,8 +196,8 @@ nav {position: relative;
   font-size:0.8em;
   font-family:'Roboto';
     position: relative;
-    left:  74%;
-  word-spacing: 20px;
+    left: 76em;
+  word-spacing: 16px;
   
   
 }
@@ -279,58 +259,31 @@ nav a:hover::before{
 
 
 
- .menu1 label{
-  margin: 0 40px 0 0;
-  font-size: 26px;
-  display: none;
+
+@media only screen and (max-width:1350px){ nav{
   position: relative;
-  left:12.5em;
-   bottom:8em;
-   width: 3em;
-   height: 3em;
-  
-}
-#toggle {
-  display: none;
-}
+  left:  28em}}
 
-@media  only screen and (max-width: 520px){ .menu1 label{
-  display:block;
-  cursor: pointer;
-  }
-  
-.menu ul li{
-  text-align: center;
-  width: 100%;
-  display: block;
+@media only screen and (max-width:740px){ nav{
   position: relative;
-  font-size: 13px;
-  width: 8em;
-  line-height: 20px;
-  margin: 0%;
-  right: 2.5em;
+  left:  16em;
+bottom: 15em}}
 
-  
-}
-  nav a:hover::before{
-    width: 0%;
-  }
+@media only screen and (max-width:580px){ nav{
+  position: relative;
+  left:  11em;
+bottom: 18em;
+  font-size: 0.7em;
+  word-spacing: 8px}}
 
 
-
-
-#toggle:checked + .menu ul li{
-  display: block;
-}
-
-
-}
-
-
-
-
-
-
+@media only screen and (max-width:420px){ nav{
+  position: relative;
+  left:  11em;
+bottom: 20em;
+  font-size: 0.6em;
+  word-spacing: 6px;
+  }}
 /*...ARROW>>>*/
   
   
@@ -356,9 +309,8 @@ nav a:hover::before{
   margin-top: -5px;
   margin-left: -15px;
   background: -webkit-gradient(linear, left top, right bottom, from(black), to(gray));
-  background: linear-gradient(top left, #e84c00, #c10040);
   -webkit-clip-path: polygon(15% 0, 50% 60%, 85% 0, 100% 20%, 50% 100%, 0 20%);
-  clip-path: polygon(15% 0, 50% 60%, 85% 0, 100% 20%, 50% 100%, 0 20%);
+  
   -webkit-animation: bounce 2s ease infinite;
   animation: bounce 2s ease infinite;
 }
@@ -422,11 +374,10 @@ font-family: 'Titillium Web', sans-serif;
   bottom:3em;
 margin: 1px;
   }}
+
+
+
 /*...team picture...*/
-
-
-
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 
 *{
@@ -492,7 +443,7 @@ section#team{
 }
 
 .content h1{
-  font-size: 2em
+  font-size: 2em;
 }
 
 .team:hover .content{
@@ -505,11 +456,15 @@ section#team{
       flex-wrap: wrap;
   }
   .content h1{
-  font-size: 1.3em
+  font-size: 1.3em;
 }
 }
 
 /*....A PEN BY Andrew Dean....*/
+
+
+
+
 
 
 /*.....video...*/
@@ -517,21 +472,9 @@ section#team{
   
 #video {
 position: relative;
-left:170px;
-  width: 100%;
-    height: auto;
-top: 600px}
+font-size: 3em;
+top: 600px;}
 
-@media only screen and (max-width: 30em) {#video{
- position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 35px;
-    height: 0;
-    overflow: hidden;
-  position: relative;
-  left: -3px;
-  }
-}
 
 
 
@@ -546,7 +489,38 @@ top: 600px}
   margin: 20px auto;
   
 }
+#termstitle h1{
+font-family: 'Finger Paint';font-size: 22px;
+font-size: 2.7em;
+position: relative;
+left: 9em;
+  top: 2em;
+color: white;
+text-shadow: 9px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  
+}
+@media screen and (max-width: 1080px) {#termstitle h1{
+  position: relative;
+  left: 4em;
+  
+  }}
+@media screen and (max-width: 750px) {#termstitle h1{
+  position: relative;
+  left: 1em;
+  
+  }}
 
+@media screen and (max-width: 650px) {#termstitle h1{
+  position: relative;
+  font-size: 2em;
+  
+  }}
+
+@media screen and (max-width: 380px) {#termstitle h1{
+  position: relative;
+  font-size: 1.5em;
+  
+  }}
 #content p{
   text-align: center;
   line-height: 27px;
@@ -565,7 +539,6 @@ top: 600px}
   line-height: 25px; 
   position: relative;
 top: 80px;
-  background: ;
   left: 100px;
   border-radius: 13%;
   height: 400px;
@@ -578,7 +551,6 @@ top: 80px;
 #content{ 
    
     border: 1px  #CCC solid;
-    
     box-shadow: 
         inset 5px 11px 15px -10px #cCC,
         inset 4px -11px 8px -10px #CCC; 
@@ -655,7 +627,7 @@ top: 80px;
 
 #end h1{
   color: #a71010;
-    font-size: 20px
+    font-size: 20px;
 }
 
 
@@ -880,14 +852,20 @@ top: 80px;
 
 
 
+
+
+
+
+
+
 /*....job page...*/
 #white {
 height: 1500px;
 background-color:#e4e4e4;
 position: relative;
-top: 6em;
+top: 16em;
   
-  background: rgba(204, 204, 204, 0.6);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -895,7 +873,7 @@ top: 6em;
 position: relative;
 width: 21em;
   left: 28em;
-  bottom: 84.9em;
+  bottom: 77.9em;
   opacity: 0.8;
   border-radius: 40%;
 }
@@ -910,24 +888,17 @@ position: relative;
   top: 20em;
     float: right;
   right: 21em;
-font-family: 'Special Elite', cursive;
+font-family: 'Acme', sans-serif;;
   font-weight: bold;
    color: #a71010;
-  
-
-  
-
-  
-
 
 }
 
-#web p{font-family: 'Special Elite', cursive;
-  font-weight: bold
-}
 
-#web a{font-family: 'Special Elite', cursive;
-  font-weight: bold
+
+#web a
+{font-family: 'Quicksand', sans-serif;
+  
 }
 #content2 p{
   width: 30em;
@@ -935,11 +906,9 @@ font-family: 'Special Elite', cursive;
   position: relative;
   top: 26em;
   left: 6em;
-
-  line-height: 1.5em;
-font-family: 'Special Elite', cursive;
-font-weight: bold
-
+  color: white;
+line-height: 1.7em;
+font-family: 'Quicksand', sans-serif;
 }
 
 #web{
@@ -947,34 +916,45 @@ float: right;
 position: relative;
 top: 38em;
 left: 36em;
-  width: 30em
+  width: 30em;
 
   
 }
 
-#web h3,h4{
+#web h3{
   line-height: 1.5em;
-  font-family: 'Special Elite', cursive;
+font-family: 'Acme', sans-serif;;
 font-weight: bold;
    color: #a71010;
   
    
 }
+#web h4{line-height: 1.5em;
+font-family: 'Acme', sans-serif;
+font-weight: bold;
+   color: #a71010;
+  }
 
 #web li{
-font-family: 'Special Elite', cursive;
+color: white;
 
-
+  line-height: 1.7em;
+font-family: 'Quicksand', sans-serif;
 line-height: 1.5em;
 position: relative;
 top: 1em;
-  font-weight: bold;
+  
 }
 
+#web p
+{color: white;
+line-height: 1.7em;
+font-family: 'Quicksand', sans-serif;
 
+}
 #middle1{
 position: relative;
-bottom: 81em;
+bottom: 71em;
   width: 30em;
   left: 3em;
 }
@@ -983,7 +963,7 @@ bottom: 81em;
 #middle1 h3{
    line-height: 1.5em;
   position: relative;
-font-family: 'Special Elite', cursive;
+font-family: 'Acme', sans-serif;
   font-weight: bold;
    color: #a71010;
   
@@ -991,21 +971,34 @@ font-family: 'Special Elite', cursive;
 
 #middle1 li{
 
-  
+  font-family: 'Quicksand', sans-serif;
 line-height: 1.5em;
 position: relative;
-  font-family: 'Special Elite', cursive;
-  font-weight: bold;
+  color: white;
+
+  line-height: 1.7em;
+
+
+
 }
 
 #middle1 p{
-font-family: 'Special Elite', cursive;
-  font-weight: bold;
+font-family: 'Quicksand', sans-serif;
+line-height: 1.5em;
+position: relative;
+  color: white;
+
+
 
 
 }
 #middle1 a{
-font-family: 'Special Elite', cursive;}
+color: white;
+
+  line-height: 1.7em;
+font-family: 'Quicksand', sans-serif;
+
+}
 
 
 
@@ -1024,7 +1017,7 @@ font-family: 'Special Elite', cursive;}
   right: 36px;
   width: 16em;
   font-size: 1em;
-  bottom: 76em
+  bottom: 76em;
   }
   
   
@@ -1036,7 +1029,7 @@ font-family: 'Special Elite', cursive;}
   right: 1.5em;
   font-size: 0.9em;
   width: 24em;
-    bottom: 85em
+    bottom: 85em;
   }
   #middle1 li{ position: relative;
   right: 35px;
@@ -1061,7 +1054,7 @@ font-family: 'Special Elite', cursive;}
      position: relative;
   top: 65em;
     width: 20em;
-   right: 51.5em
+   right: 51.5em;
   }
   #web h3{
   position: relative;
@@ -1080,7 +1073,7 @@ font-family: 'Special Elite', cursive;}
 position: relative;
 width: 21em;
   left: 1em;
-  bottom: 143.8em}
+  bottom: 143.8em;}
 }
 
 /*....phone with 650px screen...*/
@@ -1089,18 +1082,18 @@ width: 21em;
   right: 40px;
   width: 16em;
   font-size: 1em;
-  bottom: 56em
+  bottom: 56em;
   }
   
   #white{
-  height: 150em}
+  height: 150em;}
   
   #middle1 p {
   position: relative;
   right: 2.5em;
   font-size: 0.9em;
   width: 24em;
-    bottom: 62em
+    bottom: 62em;
   }
   #middle1 li{ position: relative;
   right: 40px;
@@ -1125,7 +1118,7 @@ width: 21em;
      position: relative;
   top: 38em;
     width: 20em;
-   right: 30.5em
+   right: 30.5em;
   }
   #web h3{
   position: relative;
@@ -1137,7 +1130,7 @@ width: 21em;
   position: relative;
   right: 32em;
   top: 37em;
-  width: 20em}
+  width: 20em;}
 }
 
 /*.....phones with 400px....*/
@@ -1146,11 +1139,11 @@ width: 21em;
   right: 40px;
   width: 15em;
   font-size: 1em;
- bottom: 67em
+ bottom: 67em;
   }
   
   #white{
-  height: 250em}
+  height: 250em;}
   
   
   
@@ -1159,11 +1152,11 @@ width: 21em;
   right: 2.5em;
   font-size: 0.9em;
   width: 16em;
-    bottom: 74em
+    bottom: 74em;
   }
   #middle1 li{
   position: relative;
-  top: -66em}
+  top: -66em;}
 
   #content2 p {
   position: relative;
@@ -1193,8 +1186,11 @@ width: 21em;
   #web li{
   position: relative;
   top: -34em;
-  left: -27em }
+  left: -27em; }
 }
+
+
+
 
 /*...pop up box....*/
 
@@ -1204,7 +1200,7 @@ width: 21em;
   padding-top: 0px;
   position: relative;
   width: 160px;
-  bottom: 80em;
+  bottom: 70em;
   right: 3em;
  font-family: 'Special Elite', cursive;
 }
@@ -1358,16 +1354,16 @@ width: 21em;
 
 
 
-
+/*...resources page...*/
 
 #white1{
 height: 140em;
 background-color:#E2E2E2;
 position: relative;
-top: 6em;
+top: 16em;
   width: 100%;
  
-    background: rgba(204, 204, 204, 0.6);
+  background: rgba(0, 0, 0, 0.3);
 }
 #background1{
   position: relative;
@@ -1376,27 +1372,19 @@ top: 6em;
 }
 
 #title3 h1{
-font-family: 'Cabin Sketch', cursive;
+font-family: 'Finger Paint';
   font-size: 9em;
   position: relative;
   color: darkred;
   left: 1.2em;
   bottom: 0.1em;
   
-}
-#title3 h2{
-font-family: 'Cabin Sketch', cursive;
-  font-weight: bolder;
-position: relative;
-  color: #353638;
-  font-size: 1.5em;
-  bottom: 6.1em;
-  right: 13.8em
+
 }
 #title3 h3{
   font-size: 2em;
- font-family: 'Cabin Sketch', cursive;
-
+ font-family: 'Finger Paint';
+color: white;
   position: relative;
   left: 11.6em;
   bottom: 5.7em;
@@ -1405,23 +1393,23 @@ position: relative;
 
 
 #title3 h4{
-  font-family: 'Cabin Sketch', cursive;
+  font-family: 'Finger Paint';
   font-weight: bolder;
 position: relative;
-  color: #353638;
+  color: white;
   font-size: 1.5em;
   bottom: 9em;
-  left: 21.2em
+  left: 22.6em;
 }
 
 #title3 h5{
-  font-family: 'Cabin Sketch', cursive;
+ font-family: 'Finger Paint';
   font-weight: bolder;
 position: relative;
-  color: #353638;
+  color: white;
   font-size: 1.5em;
   bottom: 8.4em;
-  left: 14em
+  left: 15.5em;
 }
 
 #title3{
@@ -1433,9 +1421,10 @@ right: 4em;
   width: 50em;
 position: relative;
 left: 9em;
-bottom: 5em}
+bottom: 5em;
+}
 #list h2{
-  font-family: 'Special Elite', cursive;
+  font-family: 'Finger Paint';
 position: relative;
 float: left;
 font-size: 1em;
@@ -1450,9 +1439,11 @@ position: relative;
 top: 1em;}
 
 #list p{
-font-family: 'Special Elite', cursive;
+font-family: 'Quicksand', sans-serif;
 line-height: 1.5em;
-font-weight: bold;
+position: relative;
+  color: white;
+
 position: relative;
 left: 4em;
 top: 0.5em;
@@ -1468,14 +1459,14 @@ text-decoration-line: none;
   
 width: 34em;
   position: relative;
-  left:  1em}
+  left:  1em;}
 
   #title3{
     font-size: 0.9em}
   #title3 h2
   {
   position: relative;
-  right: 3.5em}
+  right: 3.5em;}
 }
 
 
@@ -1491,8 +1482,9 @@ width: 24em;
   #title3 h2
   {
   position: relative;
-  right: 3.5em
-  ; margin: 1em}
+  right: 3.5em;
+   margin: 1em;
+  }
 }
 
 
@@ -1504,13 +1496,15 @@ width: 24em;
 width: 14em;
   position: relative;
   left:  8em;
-   margin: 1em}
+   margin: 1em;
+  }
 
   #title3{
     font-size: 0.7em;
   position: relative;
   left: 2em;
-   margin: 1em}
+   margin: 1em;
+  }
 }
 
 
@@ -1528,7 +1522,8 @@ width: 16em;
     font-size: 0.6em;
   position: relative;
 left: -6em;
-   margin: 1em}
+   margin: 1em;
+  }
 }
 
 
@@ -1546,7 +1541,8 @@ width: 16em;
     font-size: 0.6em;
   position: relative;
 left: -6em;
-   margin: 1em}
+   margin: 1em;
+  }
 }
 
 
@@ -1559,13 +1555,15 @@ left: -6em;
 width: 14em;
   position: relative;
   left:  1em;
-  margin: 1em}
+  margin: 1em;
+  }
 
   #title3{
     font-size: 0.4em;
   position: relative;
   right:4.5em;
-   margin: 1em}
+   margin: 1em;
+  }
 }
 
 
@@ -1584,94 +1582,828 @@ background-color:#e4e4e4;
 position: relative;
 top: 6em;
   
-  background: rgba(204, 204, 204, 0.6);
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
 }
 #text10 h4{
-font-size: 2.5em;
-font-family: 'Cabin Sketch', cursive;
-  color: black;
+font-size: 2.2em;
+ font-family: 'Finger Paint';
+  color: white;
   position: relative;
-  bottom: 3em;
+  top:  2em;
   left: 7.3em;
-  word-spacing: 1em
+  word-spacing: 1em;
 }
 
-#text10 h1{
-font-size: 2.5em;
-font-family: 'Cabin Sketch', cursive;
-  color: darkred;
-   position: relative;
-  top:  0.7em;
-  left: 7.0em;
-}
-
-#text10 h2{
-font-size: 2.5em;
-font-family: 'Cabin Sketch', cursive;
-  color: darkred;
-  position: relative;
-  right: 4.3em;
-  bottom: 0.5em
-}
-#text10 h3{
-font-size: 2.5em;
-font-family: 'Cabin Sketch', cursive;
-  color: darkred;
-   position: relative;
-  bottom:  1.6em;
-  left: 16.8em;
-}
 
 #text10 h5{
-font-family: 'Special Elite', cursive;
+font-family: 'Quicksand', sans-serif;
 font-size: 1.3em;
   position: relative;
-  bottom: 3em
+  top:  8em;
+  margin-left: 1em;
+  padding: 0.1em;
+     color: white;
 }
 
 #sitepic img{
 position: relative;
-bottom: 2em;
-  left: 12em;
-width: 60em}
+top:  13em;
+  left: 3em;
+width: 50em;}
 
 .text-block {
     position: relative;
-    bottom: 23em;
-    left:  24em;
-    background-color: black;
+    bottom: 8em;
+    left:  53em;
     color: white;
-    width: 34em;
-  height: 10em;
-  opacity: 0.7;
+    width: 27em;
+  height: 17em;
+  
   padding: 2em;
   border-radius: 8%;
   
 }
 .text-block p{
-  font-family: 'Special Elite', cursive;
+font-family: 'Quicksand', sans-serif;
 font-size: 1.1em;
-  line-height: 1.7em
+  line-height: 1.7em;
 }
 #text15 {
-border-style: outset;
-border-color:black;
+border-style: solid;
+border-color:white;
 border-width: 0.3em;
 width: 58em;
 position: relative;
-left: 13em}
+left: 13em;
+border-width: 8px;
+top: 5em;}
 
-#text15 p{font-family: 'Special Elite', cursive;
-font-size: 1.1em;
-line-height: 1.6em;
-font-weight: bold;
-  padding: 1em
+#text15 p{font-family: 'Quicksand', sans-serif;
+font-size: 1.3em;
+line-height: 1.7em;
+color: white;
+  padding: 1em;
+  
 }
-#text15 h5{font-family: 'Special Elite', cursive;
+#text15 h5{ font-family: 'Finger Paint';
   font-size: 1.5em;
   color: darkred;
+  padding: 1em;
+}
+
+
+@media only screen and (max-width:1320px) {#text10 h4{font-size: 1.5em;}
+
+  #sitepic img{
+  width: 35em;
+  
+  }
+  .text-block p{
+  position: relative;
+    right:  15em;
+    top: 4em;
+  }
+  #text15{
+  width: 60em;
+  position: relative;
+  left:  3em;
+  }
+  #text15 p{
+  font-size: 1.2em;}
+}
+
+
+
+
+
+@media only screen and (max-width:1065px) {
+  
+  #text10 h4{font-size: 1.4em}
+
+  #sitepic img{
+  width: 25em;
+  
+  }
+  .text-block p{
+  position: relative;
+    right:  29em;
+    top: 9em;
+    font-size: 0.9em;
+  }
+  #text15{
+  width: 50em;
+  position: relative;
+  left:  3em;
+  }
+  #text15 p{
+  font-size: 1em;}
+  #text15 h5{
+  font-size: 1.3em;}
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:920px) {
+  
+  #text10 h4{font-size: 1.2em;
+  position: relative;
+  left: 3em;}
+
+  #sitepic img{
+  width: 25em;
+    
+  
+  }
+  .text-block p{
+  position: relative;
+    right:  58em;
+    top: 25em;
+    font-size: 0.9em;
+    width: 28em;
+  }
+  #text15{
+  width: 25em;
+  position: relative;
+  left:  3em;
+  margin-top: 5em;
+  }
+  #text15 p{
+  font-size: 1em}
+  #text15 h5{
+  font-size: 1.2em}
+}
+
+
+
+
+
+
+@media only screen and (max-width:485px) {
+  
+  #text10 h4{font-size: 1.1em;
+  position: relative;
+  left: 3em;}
+  
+  #text10 h5{
+  font-size: 1em}
+
+  #sitepic img{
+  width: 20em;
+    
+  
+  }
+  .text-block p{
+  position: relative;
+    right:  65em;
+    top: 30em;
+    font-size: 0.8em;
+    width: 28em;
+  }
+  #text15{
+  width: 20em;
+  position: relative;
+  left:  3em;
+  margin-top: 5em;
+  }
+  #text15 p{
+  font-size: 0.8em;}
+  
+  #text15 h5{
+  font-size: 1em;}
+}
+
+
+
+
+
+@media only screen and (max-width:425px) {
+  
+  #text10 h4{font-size: 1.1em;
+  position: relative;
+  left: 1em;}
+  
+  #text10 h5{
+  font-size: 1em}
+
+  #sitepic img{
+  width: 17em;
+    
+  
+  }
+  .text-block p{
+  position: relative;
+    right:  65em;
+    top: 30em;
+    font-size: 0.8em;
+    width: 21em;
+  }
+  #text15{
+  width: 20em;
+  position: relative;
+  left:  3em;
+  margin-top: 5em;
+  }
+  
+  #text15 p{
+  font-size: 0.8em;}
+  
+  #text15 h5{
+  font-size: 1em;}
+}
+
+
+
+
+/*... validation page...*/
+#text16 h1{
+padding: 1em;
+  font-family:'Finger Paint';
+color: white;
+font-size: 1.3em;
+  color: darkred
+}
+
+#text16 img{
+width: 48em;
+height: 26em;
+position: relative;
+top: 3em;
   padding: 1em
 }
+
+#text16 p {
+width: 20em;
+position: relative;
+left: 38em;
+bottom: 12em;
+font-family: 'Quicksand', sans-serif;
+color: white;
+font-size: 1.3em;
+margin: 0.4em;
+padding: 0.4em;
+}
+
+
+#text17 img{
+width:48em;
+height: 26em;
+position: relative;
+top: 3em;
+  padding: 1em;
+}
+
+
+
+
+
+#text17 p {
+width: 20em;
+position: relative;
+left: 38em;
+bottom: 12em;
+font-family: 'Quicksand', sans-serif;
+color: white;
+font-size: 1.3em;
+margin: 0.4em;
+padding: 0.4em;
+}
+
+
+#text18 h2{
+padding: 1em;
+  font-family:'Finger Paint';
+color: white;
+font-size: 1.5em;
+position: relative;
+right: 22em;
+top: 3em;
+  color: darkred
+}
+#text18 p {
+width: 50em;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-size: 1.3em;
+  position: relative;
+  left: 6em;
+  top: 3em;
+  
+  
+
+}
+
+
+
+
+@media only screen and (max-width:1200px) {
+  
+
+#text16 h1{
+padding: 1em;
+  font-family:'Finger Paint';
+color: white;
+font-size: 1.3em;
+  color: darkred
+}
+
+#text16 img{
+width: 38em;
+height: 23em;
+position: relative;
+top: 3em;
+  padding: 1em
+}
+
+#text16 p {
+width: 20em;
+position: relative;
+left: 32em;
+bottom: 12em;
+font-family: 'Quicksand', sans-serif;
+color: white;
+font-size: 1.2em;
+margin: 0.4em;
+padding: 0.4em;
+}
+
+
+#text17 img{
+width: 38em;
+height: 23em;
+position: relative;
+top: 3em;
+  padding: 1em
+}
+
+
+
+
+
+#text17 p {
+width: 20em;
+position: relative;
+left: 32em;
+bottom: 12em;
+font-family: 'Quicksand', sans-serif;
+color: white;
+font-size: 1.2em;
+margin: 0.4em;
+padding: 0.4em;
+}
+
+
+#text18 h2{
+padding: 1em;
+  font-family:'Finger Paint';
+color: white;
+font-size: 1.3em;
+position: relative;
+right: 18em;
+top: 3em;
+  color: darkred
+}
+#text18 p {
+width: 45em;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-size: 1.2em;
+  position: relative;
+  left: 6em;
+  top: 3em;
+  
+  
+
+}
+}
+
+
+
+
+
+
+@media only screen and (max-width:1030px) {
+  
+
+#text16 h1{
+padding: 1em;
+  font-family:'Finger Paint';
+color: white;
+font-size: 1.3em;
+  color: darkred
+}
+
+#text16 img{
+width: 35em;
+height: 20em;
+position: relative;
+top: 3em;
+  padding: 1em
+}
+
+#text16 p {
+width: 17em;
+position: relative;
+left: 30em;
+bottom: 12em;
+font-family: 'Quicksand', sans-serif;
+color: white;
+font-size: 1.2em;
+margin: 0.4em;
+padding: 0.4em;
+}
+
+
+#text17 img{
+width: 35em;
+height: 20em;
+position: relative;
+top: 3em;
+  }
+
+
+
+
+#text17 p {
+width: 17em;
+position: relative;
+left: 30em;
+bottom: 12em;
+font-family: 'Quicksand', sans-serif;
+color: white;
+font-size: 1.2em;
+margin: 0.4em;
+padding: 0.4em;
+}
+
+
+#text18 h2{
+padding: 1em;
+  font-family:'Finger Paint';
+color: white;
+font-size: 1.3em;
+position: relative;
+right: 18em;
+top: 3em;
+  color: darkred
+}
+#text18 p {
+width: 38em;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-size: 1.2em;
+  position: relative;
+  left: 6em;
+  top: 3em;
+  line-height: 1.5em
+  
+  
+
+}
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:950px) {
+  
+
+#text16 h1{
+padding: 1em;
+  font-family:'Finger Paint';
+color: white;
+font-size: 1.3em;
+  color: darkred
+}
+
+#text16 img{
+width: 35em;
+height: 20em;
+position: relative;
+top: 3em;
+  padding: 1em
+}
+
+#text16 p {
+width: 17em;
+position: relative;
+left: 1em;
+top:  3em;
+font-family: 'Quicksand', sans-serif;
+color: white;
+font-size: 1.2em;
+margin: 0.4em;
+padding: 0.4em;
+}
+
+
+#text17 img{
+width: 35em;
+height: 20em;
+position: relative;
+top: 7em;
+  }
+
+
+
+
+#text17 p {
+width: 17em;
+position: relative;
+left: 2em;
+top:  6em;
+font-family: 'Quicksand', sans-serif;
+color: white;
+font-size: 1.2em;
+margin: 0.4em;
+padding: 0.4em;
+}
+
+
+#text18 h2{
+padding: 1em;
+  font-family:'Finger Paint';
+color: white;
+font-size: 1.3em;
+position: relative;
+right: 18em;
+top: 8em;
+  color: darkred
+}
+#text18 p {
+width: 24em;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-size: 1.2em;
+  position: relative;
+  left: 2em;
+  top: 9em;
+  line-height: 1.5em
+  
+  
+
+}
+}
+
+
+@media only screen and (max-width:600px) {
+  
+
+#text16 h1{
+padding: 1em;
+  font-family:'Finger Paint';
+color: white;
+font-size: 1.2em;
+  color: darkred
+}
+
+#text16 img{
+width: 25em;
+height: 14em;
+position: relative;
+top: 3em;
+  padding: 1em
+}
+
+#text16 p {
+width: 17em;
+position: relative;
+left: 1em;
+top:  3em;
+font-family: 'Quicksand', sans-serif;
+color: white;
+font-size: 1em;
+margin: 0.4em;
+padding: 0.4em;
+}
+
+
+#text17 img{
+width: 25em;
+height: 14em;
+position: relative;
+top: 7em;
+  }
+
+
+
+
+#text17 p {
+width: 17em;
+position: relative;
+left: 2em;
+top:  6em;
+font-family: 'Quicksand', sans-serif;
+color: white;
+font-size: 1em;
+margin: 0.4em;
+padding: 0.4em;
+}
+
+
+#text18 h2{
+padding: 1em;
+  font-family:'Finger Paint';
+color: white;
+font-size: 1.3em;
+position: relative;
+right: 7em;
+top: 8em;
+  color: darkred
+}
+#text18 p {
+width: 19em;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-size: 1em;
+  position: relative;
+  left: 2em;
+  top: 9em;
+  line-height: 1.5em
+  
+  
+
+}
+}
+
+
+@media only screen and (max-width:440px) {
+  
+
+#text16 h1{
+padding: 1em;
+  font-family:'Finger Paint';
+color: white;
+font-size: 1em;
+  color: darkred
+}
+
+#text16 img{
+width: 20em;
+height: 11em;
+position: relative;
+top: 3em;
+  padding: 1em
+}
+
+#text16 p {
+width: 17em;
+position: relative;
+left: 1em;
+top:  3em;
+font-family: 'Quicksand', sans-serif;
+color: white;
+font-size: 1em;
+margin: 0.4em;
+padding: 0.4em;
+}
+
+
+#text17 img{
+width: 20em;
+height: 11em;
+position: relative;
+top: 7em;
+  }
+
+
+
+
+#text17 p {
+width: 17em;
+position: relative;
+left: 2em;
+top:  6em;
+font-family: 'Quicksand', sans-serif;
+color: white;
+font-size: 1em;
+margin: 0.4em;
+padding: 0.4em;
+}
+
+
+#text18 h2{
+padding: 1em;
+  font-family:'Finger Paint';
+color: white;
+font-size: 1.1em;
+position: relative;
+right: 4em;
+top: 8em;
+  color: darkred
+}
+#text18 p {
+width: 19em;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-size: 1em;
+  position: relative;
+  left: 2em;
+  top: 9em;
+  line-height: 1.5em
+  
+  
+
+}
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:354px) {
+  
+
+#text16 h1{
+padding: 1em;
+  font-family:'Finger Paint';
+color: white;
+font-size: 1em;
+  color: darkred
+}
+
+#text16 img{
+width: 15em;
+height: 8em;
+position: relative;
+top: 3em;
+  padding: 1em
+}
+
+#text16 p {
+width: 17em;
+position: relative;
+left: 1em;
+top:  3em;
+font-family: 'Quicksand', sans-serif;
+color: white;
+font-size: 0.8em;
+margin: 0.4em;
+padding: 0.4em;
+}
+
+
+#text17 img{
+width: 15em;
+height: 8em;
+position: relative;
+top: 7em;
+  }
+
+
+
+
+#text17 p {
+width: 17em;
+position: relative;
+left: 2em;
+top:  9em;
+font-family: 'Quicksand', sans-serif;
+color: white;
+font-size: 0.8em;
+margin: 0.4em;
+padding: 0.4em;
+}
+
+
+#text18 h2{
+padding: 1em;
+  font-family:'Finger Paint';
+color: white;
+font-size: 1em;
+position: relative;
+right: 4em;
+top: 8em;
+  color: darkred
+}
+#text18 p {
+width: 18em;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-size: 0.8em;
+  position: relative;
+  left: 2em;
+  top: 9em;
+  line-height: 1.5em
+  
+  
+
+}
+}
+
+
+
 
 
 
@@ -1700,7 +2432,7 @@ position: relative;
   padding: 10px;
   font-size: 20px;
   color: white;
- font-family: 'Cabin Sketch', cursive;
+font-family: 'Quicksand', sans-serif;
   
 
  
@@ -1715,7 +2447,7 @@ right: 40%;
 font-size:16px;
 line-height: 150%;
   color: white;
- font-family: 'Cabin Sketch', cursive;
+font-family: 'Quicksand', sans-serif;
 }
 
 #quick{
@@ -1725,7 +2457,7 @@ position: relative;
 bottom: 125px;
   left: 150px;
   color: white;
-     font-family: 'Cabin Sketch', cursive;
+font-family: 'Quicksand', sans-serif;
 }
 
 #quick a{
@@ -1737,7 +2469,7 @@ right: 70px;
 line-height: 150%;
 text-align: center;
 font-size:16px;
-     font-family: 'Cabin Sketch', cursive;
+    font-family: 'Quicksand', sans-serif;
 
 
 }
@@ -1753,7 +2485,7 @@ left: 360px;
   font-size: 16px;
   font-weight: bold;
   color: white;
-    font-family: 'Cabin Sketch', cursive;
+  font-family: 'Quicksand', sans-serif;
 }
 
 #quick h5{
@@ -1763,7 +2495,7 @@ top: 100px;
  height: 10px;
   font-size: 12px;
     color: white;
-    font-family: 'Cabin Sketch', cursive;
+    font-family: 'Quicksand', sans-serif;
 }
 
 
@@ -1809,66 +2541,202 @@ a {
 }
 
 
-@media  only screen and (max-width: 520px){#contact h3{
-  font-size: 0.9em;
-  position: relative;
-margin-left: -12px
+@media  only screen and (max-width: 1200px){#contact h3{font-size: 1.1em
+  
   
   }
   #contact p{
-  font-size: 0.7em;
-  position: relative;
-    margin-left: 20px;}
+}
   
   
   
   
   #quick h3{
-  font-size: 13px;
-    position: relative;
-    top: 2.5em;
-    right: 14px
+    font-size: 1.1em;
+  
   }
   #quick a{
-  font-size: 12px;
-  position: relative;
-  top: 5em;
-margin-right: 40px;
+
   }
   .icons{
-  font-size: 5px;
-  position: relative;
-  left:  270px;
-  margin-top: 30px;
+   position: relative;
+    left: 88em
   }
   
   #quick h6{
-  position: relative;
-  left:  -49px;
-  top: 30px;
-  font-size: 14px;
+ font-size: 1.1em;
+    position: relative;
+    left: 12em;
   }
   
   
   #quick h5{
-position: relative;
-  left:-150px;
-  font-size: 11px;
-  top: 140px
+ position: relative;
+    left: 11em;}
+
+
+
+
+
+
+@media  only screen and (max-width: 1040px){#contact h3{font-size: 1em
+  
+  
+  }
+  #contact p{
+    font-size: 0.8em
+}
+  
+  
+  
+  
+  #quick h3{
+    font-size: 1em;
+    position: relative;
+    top: 1.5em;
+    right: 6em
+  
+  }
+  #quick a{
+        font-size: 0.8em;
+    position: relative;
+    top: 4em;
+    right: 12em
+
+  }
+  .icons{
+   position: relative;
+    left: 80em;
+    width: 14em;
+    font-size: 9px;
+    margin-top: 3em
+  }
+  
+  #quick h6{
+ font-size: 1em;
+    position: relative;
+    left: 7em;
+    top: 2em
+  }
+  
+  
+  #quick h5{
+ position: relative;
+    left: 1em;
+    top: 10em}
+
+
+  }}
+
+
+
+
+@media  only screen and (max-width: 855px){.icons{
+  position: relative;
+  left: 70em;}}
+
+
+
+@media  only screen and (max-width: 755px){.icons{
+  position: relative;
+  left: 65em;}}
+
+
+
+@media  only screen and (max-width: 706px){.icons{
+  position: relative;
+  left: 55em;}
+
+#quick h6{
+ font-size: 1em;
+    position: relative;
+    left: 3em;
+    top: 2em
+  }
+  
+  
+  #quick h5{
+ position: relative;
+    left: -4em;
+    top: 10em}
 }
 
 
 
 
+@media  only screen and (max-width: 618px){.icons{
+  position: relative;
+  left: 50em;}}
 
 
 
+@media  only screen and (max-width: 570px){.icons{
+  position: relative;
+  left: 45em;}
+
+@media  only screen and (max-width: 527px){.icons{
+  position: relative;
+  left: 32em;}
+  
+  #quick h6{
+ font-size: 1em;
+    position: relative;
+    left: -4em;
+    top: 1.6em
+  }
+  
+  
+  #quick h5{
+ position: relative;
+    left: -13em;
+    top: 10em}
+}}
+@media  only screen and (max-width: 425px){.icons{
+  position: relative;
+  left: 25em;}
+  
+  #contact h3{font-size: 0.9em;
+    position: relative;
+    left: -0.1em
+  
+  
+  }
+  #contact p{
+    font-size: 0.6em
+}
+  
+  
+  
+  
+  #quick h3{
+    font-size: 0.9em;
+    position: relative;
+    top: 2.8em;
+    right: 6em
+  
+  }
+  #quick a{
+        font-size: 0.7em;
+    position: relative;
+    top: 6em;
+    right: 13em
+
+  }
+  
+  
+  #quick h6{
+ font-size: 0.9em;
+    position: relative;
+    left: -6em;
+    top: 3em
+  }
+  
+  
+  #quick h5{
+ position: relative;
+    left: -17em;
+    top: 11em;
+  font-size: 0.6em}
 
 
-
-
-
-
-
-
-
+  }}
